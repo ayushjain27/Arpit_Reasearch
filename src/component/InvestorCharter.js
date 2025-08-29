@@ -902,7 +902,7 @@ const InvestorCharter = () => {
 
             {/* Footer Note */}
             <div className="mt-6 text-center text-sm text-gray-500">
-              <p>SEBI Registered Research Analyst - INH000022066</p>
+              <p>SEBI Registered Research Analyst - INH000013129</p>
               <p className="mt-1">
                 © {new Date().getFullYear()} AKV Equity Research. All rights
                 reserved.

@@ -31,11 +31,11 @@ const TermsAndConditions = () => {
                 </h2>
                 <div className="space-y-1 text-gray-700">
                   <p>
-                    This is an agreement between the client ("You") and Abishek
-                    Kondagunta Venkatesh ("Research Analyst") registered with
-                    the Securities and Exchange Board of India (SEBI) as a
-                    Research Analyst (RA) under registration No. INH000022066;
-                    BSE Enlistment No. &lt;to be updated&gt;
+                    This is an agreement between the client ("You") and Arpit
+                    Goyal ("Research Analyst") registered with the Securities
+                    and Exchange Board of India (SEBI) as a Research Analyst
+                    (RA) under registration No. INH000013129; BSE Enlistment No.
+                    &lt;to be updated&gt;
                   </p>
                   <p>
                     By subscribing to the research services, clients acknowledge
@@ -123,14 +123,14 @@ const TermsAndConditions = () => {
                     </div>
                     <div className="bg-gradient-to-r from-blue-50 to-teal-50 p-6 rounded-lg border border-blue-200 mt-2">
                       <h2 className="text-xl font-bold text-blue-800 my-2">
-                        Declaration from Abishek Kondagunta Venkatesh (“Research
+                        Declaration from Arpit Goyal (“Research
                         Analyst”):
                       </h2>
                       <div className="space-y-1 text-blue-700">
                         <ul className="list-disc pl-5 space-y-2">
                           <li>
                             We are duly registered with SEBI as a research
-                            analyst under registration no. INH000022066 from
+                            analyst under registration no. INH000013129 from
                             July 28, 2025; BSE enlistment no. &lt;to be
                             updated&gt; and compliant with the SEBI (research
                             analyst) regulations, 2014.
@@ -213,12 +213,12 @@ const TermsAndConditions = () => {
                     clients must email their concerns to the grievance officer
                     at{" "}
                     <a
-                      href="mailto:abishekkvenkatesh@outlook.com"
+                      href="mailto:agbpl2354@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline"
                     >
-                      abishekkvenkatesh@outlook.com
+                      agbpl2354@gmail.com
                     </a>
                     . All grievances will be addressed within 7 (seven) business
                     days or as per latest SEBI RA Regulations.
@@ -399,12 +399,12 @@ const TermsAndConditions = () => {
                       </strong>
                       <ul className="list-disc pl-5 mt-2 space-y-1">
                         <li>
-                          Abishek Kondagunta Venkatesh, in compliance with SEBI
-                          guidelines, informs clients about the availability of
-                          an optional Centralised Fee Collection Mechanism
-                          (CeFCoM) for the payment of fees. Clients opting for
-                          this mechanism will be provided with necessary
-                          guidance and instructions at the time of subscription.
+                          Arpit Goyal, in compliance with SEBI guidelines,
+                          informs clients about the availability of an optional
+                          Centralised Fee Collection Mechanism (CeFCoM) for the
+                          payment of fees. Clients opting for this mechanism
+                          will be provided with necessary guidance and
+                          instructions at the time of subscription.
                         </li>
                       </ul>
                     </li>
@@ -412,9 +412,9 @@ const TermsAndConditions = () => {
                       <strong>Use of Artificial Intelligence:</strong>
                       <ul className="list-disc pl-5 mt-2 space-y-1">
                         <li>
-                          Abishek Kondagunta Venkatesh may infrequently use
-                          Artificial Intelligence (AI) tools in its research
-                          services to enhance the quality and efficiency of the
+                          Arpit Goyal may infrequently use Artificial
+                          Intelligence (AI) tools in its research services to
+                          enhance the quality and efficiency of the
                           recommendations provided to clients. In accordance
                           with Regulation 24(7) of the SEBI (Research Analyst)
                           Regulations, 2014:
@@ -466,7 +466,7 @@ const TermsAndConditions = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000022066</p>
+            <p>SEBI Registered Research Analyst - INH000013129</p>
             <p className="mt-1">
               © {new Date().getFullYear()} AKV Equity Research. All rights
               reserved.

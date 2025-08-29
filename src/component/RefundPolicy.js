@@ -16,8 +16,8 @@ const RefundPolicy = () => {
               REFUND POLICY
             </h1>
             <div className="mt-2 text-white text-sm">
-              <p>Abishek Kondagunta Venkatesh</p>
-              <p>{`SEBI Registered Research Analyst No. INH000022066 | BSE Enlistment <to be updated>`}</p>
+              <p>Arpit Goyal</p>
+              <p>{`SEBI Registered Research Analyst No. INH000013129 | BSE Enlistment <to be updated>`}</p>
               <p>Date of update: August 1, 2025</p>
             </div>
           </div>
@@ -32,7 +32,7 @@ const RefundPolicy = () => {
               <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg">
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    AKV Equity Research by Abishek Kondagunta Venkatesh is
+                    AKV Equity Research by Arpit Goyal is
                     committed to deliver high quality services with transparency
                     in line with the Securities and Exchange Board of India
                     (SEBI) Research Analyst regulations 2014 and related
@@ -52,7 +52,7 @@ const RefundPolicy = () => {
                 <div className="space-y-2 text-gray-700">
                   <p>
                     This refund policy applies to all paid services provided by
-                    Abishek Kondagunta Venkatesh including but not limited to
+                    Arpit Goyal including but not limited to
                     research reports, research recommendation subscriptions,
                     educational courses, content and related services. It is not
                     based on the outcome of investments or research
@@ -90,7 +90,7 @@ const RefundPolicy = () => {
                     <h3 className="font-semibold">b. Premature Termination</h3>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>
-                        If the client or Abishek Kondagunta Venkatesh terminates
+                        If the client or Arpit Goyal terminates
                         the service before the subscription period expires, you
                         are entitled to a refund on a pro-rata basis for the
                         unutilized full months, subject to the conditions in
@@ -118,7 +118,7 @@ const RefundPolicy = () => {
                     <h3 className="font-semibold">d. Regulatory actions</h3>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>
-                        If Abishek Kondagunta Venkatesh's SEBI registration is
+                        If Arpit Goyal's SEBI registration is
                         suspended or cancelled due to regulatory violations, or
                         if we cease operations; you are entitled to a refund on
                         pro-rata basis for the unutilized period.
@@ -268,7 +268,7 @@ const RefundPolicy = () => {
                   <div>
                     <h3 className="font-semibold">Submit a request:</h3>
                     <p className="pl-5 mt-1">
-                      E-mail us at abishekkvenkatesh@outlook.com with the
+                      E-mail us at agbpl2354@gmail.com with the
                       following details:
                     </p>
                     <ul className="list-disc pl-10 mt-1 space-y-1">
@@ -323,9 +323,9 @@ const RefundPolicy = () => {
                     process, please contact the grievance officer:
                   </p>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
-                    <li>Name - Abishek Kondagunta Venkatesh</li>
-                    <li>E-mail: abishekkvenkatesh@outlook.com</li>
-                    <li>Mobile: +91 7416931626</li>
+                    <li>Name - Arpit Goyal</li>
+                    <li>E-mail: agbpl2354@gmail.com</li>
+                    <li>Mobile: +91 9179231876</li>
                   </ul>
                 </div>
               </section>
@@ -391,7 +391,7 @@ const RefundPolicy = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000022066</p>
+            <p>SEBI Registered Research Analyst - INH000013129</p>
             <p className="mt-1">
               © {new Date().getFullYear()} AKV Equity Research. All rights
               reserved.

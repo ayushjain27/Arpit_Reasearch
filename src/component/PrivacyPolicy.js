@@ -31,22 +31,22 @@ const PrivacyPolicy = () => {
                 </h2>
                 <div className="space-y-1 text-gray-700">
                   <p>
-                    This privacy policy sets out how Abishek Kondagunta
-                    Venkatesh uses and protects any information that you give
-                    Abishek Kondagunta Venkatesh when you use this website.
+                    This privacy policy sets out how Arpit Goyal uses and
+                    protects any information that you give Arpit Goyal when you
+                    use this website.
                   </p>
                   <p>
-                    Abishek Kondagunta Venkatesh is committed to ensuring that
-                    your privacy is protected. Should we ask you to provide
-                    certain information by which you can be identified when
-                    using this website, then you can be assured that it will
-                    only be used in accordance with this privacy statement.
+                    Arpit Goyal Venkatesh is committed to ensuring that your
+                    privacy is protected. Should we ask you to provide certain
+                    information by which you can be identified when using this
+                    website, then you can be assured that it will only be used
+                    in accordance with this privacy statement.
                   </p>
                   <p>
-                    Abishek Kondagunta Venkatesh may change this policy from
-                    time to time by updating this page. You should check this
-                    page from time to time to ensure that you are happy with any
-                    changes. This policy is effective from August 01, 2025.
+                    Arpit Goyal may change this policy from time to time by
+                    updating this page. You should check this page from time to
+                    time to ensure that you are happy with any changes. This
+                    policy is effective from August 01, 2025.
                   </p>
                 </div>
               </section>
@@ -213,7 +213,7 @@ const PrivacyPolicy = () => {
                       If you have previously agreed to us using your personal
                       information for direct marketing purposes, you may change
                       your mind at any time by writing to or emailing us at
-                      abishekkvenkatesh@outlook.com
+                      agbpl2354@gmail.com
                     </li>
                   </ul>
                   <p>
@@ -413,7 +413,7 @@ const PrivacyPolicy = () => {
                     For any privacy-specific concerns, please contact us at:
                   </p>
                   <p className="font-medium">
-                    Email: abishekkvenkatesh@outlook.com
+                    Email: agbpl2354@gmail.com
                   </p>
                 </div>
               </section>
@@ -422,7 +422,7 @@ const PrivacyPolicy = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000022066</p>
+            <p>SEBI Registered Research Analyst - INH000013129</p>
             <p className="mt-1">
               © {new Date().getFullYear()} AKV Equity Research. All rights
               reserved.

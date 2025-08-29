@@ -3,9 +3,9 @@ import { ArrowRight, Phone, Mail, MapPin, Clock } from "lucide-react";
 import HeaderTab from "./HeaderTab";
 
 const ContactUs = () => {
-  const phoneNumber = "+917416931626";
+  const phoneNumber = "+919179231876";
   const whatsappLink = `https://wa.me/${phoneNumber.replace(/\D/g, '')}`;
-  const mailToLink = "mailto:abishekkvenkatesh@outlook.com";
+  const mailToLink = "mailto:agbpl2354@gmail.com";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -38,10 +38,7 @@ const ContactUs = () => {
                     <div>
                       <h3 className="font-semibold text-gray-800">Address</h3>
                       <p className="text-gray-700">
-                        H.No 11-9-173, Ground Floor,<br />
-                        LaxmiNagar, Kothapet,<br />
-                        Saroornagar Mandal,<br />
-                        Hyderabad, Telangana-500035
+                        
                       </p>
                     </div>
                   </div>
@@ -88,7 +85,7 @@ const ContactUs = () => {
                         href={mailToLink}
                         className="text-blue-600 hover:underline"
                       >
-                        abishekkvenkatesh@outlook.com
+                        agbpl2354@gmail.com
                       </a>
                     </div>
                   </div>
@@ -113,9 +110,9 @@ const ContactUs = () => {
 
         {/* Footer Note */}
         <div className="mt-6 text-center text-sm text-gray-500">
-          <p>SEBI Registered Research Analyst - INH000022066</p>
+          <p>SEBI Registered Research Analyst - INH000013129</p>
           <p className="mt-1">
-            © {new Date().getFullYear()} AKV Equity Research. All rights reserved.
+            © {new Date().getFullYear()} Arpit Goyal Research. All rights reserved.
           </p>
         </div>
       </div>

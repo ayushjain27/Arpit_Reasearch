@@ -65,18 +65,18 @@ const GrievanceRedressal = () => {
                       Customer Care
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      Abishek Kondagunta Venkatesh
+                      Arpit Goyal
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                      Saroornagar Mandal, Hyderabad, Telangana-500035
+                      202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                      PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +917416931626
+                      +919179231876
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
-                      <a href="mailto:abishekkvenkatesh@outlook.com">
-                        abishekkvenkatesh@outlook.com
+                      <a href="mailto:agbpl2354@gmail.com">
+                        agbpl2354@gmail.com
                       </a>
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
@@ -90,18 +90,18 @@ const GrievanceRedressal = () => {
                       Head of Customer Care
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      Abishek Kondagunta Venkatesh
+                      Arpit Goyal
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                      Saroornagar Mandal, Hyderabad, Telangana-500035
+                      202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                      PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +917416931626
+                      +919179231876
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
-                      <a href="mailto:abishekkvenkatesh@outlook.com">
-                        abishekkvenkatesh@outlook.com
+                      <a href="mailto:agbpl2354@gmail.com">
+                        agbpl2354@gmail.com
                       </a>
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
@@ -115,18 +115,18 @@ const GrievanceRedressal = () => {
                       Compliance Officer
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      Abishek Kondagunta Venkatesh
+                      Arpit Goyal
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                      Saroornagar Mandal, Hyderabad, Telangana-500035
+                      202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                      PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +917416931626
+                      +919179231876
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
-                      <a href="mailto:abishekkvenkatesh@outlook.com">
-                        abishekkvenkatesh@outlook.com
+                      <a href="mailto:agbpl2354@gmail.com">
+                        agbpl2354@gmail.com
                       </a>
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
@@ -140,18 +140,18 @@ const GrievanceRedressal = () => {
                       CEO
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      Abishek Kondagunta Venkatesh
+                      Arpit Goyal
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                      Saroornagar Mandal, Hyderabad, Telangana-500035
+                      202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                      PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +917416931626
+                      +919179231876
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
-                      <a href="mailto:abishekkvenkatesh@outlook.com">
-                        abishekkvenkatesh@outlook.com
+                      <a href="mailto:agbpl2354@gmail.com">
+                        agbpl2354@gmail.com
                       </a>
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
@@ -165,18 +165,18 @@ const GrievanceRedressal = () => {
                       Principal Officer
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      Abishek Kondagunta Venkatesh
+                      Arpit Goyal
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                      Saroornagar Mandal, Hyderabad, Telangana-500035
+                      202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                      PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +917416931626
+                      +919179231876
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
-                      <a href="mailto:abishekkvenkatesh@outlook.com">
-                        abishekkvenkatesh@outlook.com
+                      <a href="mailto:agbpl2354@gmail.com">
+                        agbpl2354@gmail.com
                       </a>
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
@@ -216,8 +216,7 @@ const GrievanceRedressal = () => {
                   rel="noopener noreferrer"
                   className="text-teal-600 hover:underline flex items-center"
                 >
-                  Link to SCORES Portal{" "}
-                  <ExternalLink className="w-4 h-4" />
+                  Link to SCORES Portal <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
 
@@ -242,7 +241,7 @@ const GrievanceRedressal = () => {
           {/* Footer Note */}
           <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
             <p className="text-sm text-gray-500 text-center">
-              SEBI Registered Research Analyst - INH000022066
+              SEBI Registered Research Analyst - INH000013129
             </p>
           </div>
         </div>

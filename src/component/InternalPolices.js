@@ -106,8 +106,8 @@ const InternalPolicies = () => {
                   <div className="text-gray-700">
                     <p>
                       This policy shall be applicable to Research Analyst
-                      Abishek Kondagunta Venkatesh holding SEBI Registration No
-                      INH000022066 and Associates; if any of the Research
+                      Arpit Goyal holding SEBI Registration No
+                      INH000013129 and Associates; if any of the Research
                       Analyst.
                     </p>
                   </div>
@@ -422,7 +422,7 @@ const InternalPolicies = () => {
                     </ol>
                     <div className="mt-4 text-right">
                       <p className="font-medium">
-                        Mr. Abishek Kondagunta Venkatesh
+                        Mr. Arpit Goyal
                       </p>
                       <p>Place: Hyderabad</p>
                       <p>Date: June 28, 2025</p>
@@ -434,7 +434,7 @@ const InternalPolicies = () => {
 
             {/* Footer Note */}
             <div className="mt-6 text-center text-sm text-gray-500">
-              <p>SEBI Registered Research Analyst - INH000022066</p>
+              <p>SEBI Registered Research Analyst - INH000013129</p>
               <p className="mt-1">
                 © {new Date().getFullYear()} AKV Equity Research. All rights
                 reserved.

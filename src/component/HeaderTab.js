@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Logo from "./image/AKVLogo.png";
+import Logo from "./image/Logos.png";
 
 const HeaderTab = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,7 +46,7 @@ const HeaderTab = () => {
         </div>
       </div>
       <span className="text-xs sm:text-sm text-gray-600 mt-0.5 ml-3">
-        by Abishek Kondagunta Venkatesh
+        by Arpit Goyal
       </span>
     </div>
   );

@@ -44,7 +44,7 @@ const StandardDisclosures = () => {
                   </p>
                   <p>
                     For the purpose of the disclosure document, Research Analyst
-                    is <strong>Abishek Kondagunta Venkatesh{" "}</strong>
+                    is <strong>Arpit Goyal{" "}</strong>
                     (hereinafter referred to as "Research Analyst" or "RA")
                   </p>
                 </div>
@@ -57,8 +57,8 @@ const StandardDisclosures = () => {
                 </h2>
                 <div className="space-y-1 text-gray-700">
                   <p>
-                    Abishek Kondagunta Venkatesh is a SEBI registered Research
-                    Analyst with registration no. <strong>INH000022066</strong>{" "}
+                  Arpit Goyal is a SEBI registered Research
+                    Analyst with registration no. <strong>INH000013129</strong>{" "}
                     valid from July 28, 2025 – July 27, 2030.
                   </p>
                   <p>
@@ -277,7 +277,7 @@ const StandardDisclosures = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000022066</p>
+            <p>SEBI Registered Research Analyst - INH000013129</p>
             <p className="mt-1">
               © {new Date().getFullYear()} AKV Equity Research. All rights
               reserved.

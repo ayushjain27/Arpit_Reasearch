@@ -15,7 +15,7 @@ import {
   FileText,
 } from "lucide-react";
 import HeaderTab from "./HeaderTab";
-import Logo from "./image/AKVLogo.png";
+import Logo from "./image/Logos.png";
 import Image from "./image/stock market.webp";
 
 const AKVHomepage = () => {
@@ -99,13 +99,13 @@ const AKVHomepage = () => {
         <div className="relative w-150 h-100">
           <img
             src={Logo} // Replace with your actual logo path
-            alt="AKV Equity Research Logo"
+            alt="Arpit Goyal Logo"
             className="h-13 w-auto" // Adjust height as needed
           />
         </div>
       </div>
       <span className=" text-center text-xs sm:text-sm text-white md:mt-0.5">
-        by Abishek Kondagunta Venkatesh
+        by Arpit Goyal
       </span>
     </div>
   );
@@ -128,7 +128,7 @@ const AKVHomepage = () => {
                 <div className="flex items-center space-x-3">
                   <div className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium flex items-center">
                     <FileText className="w-4 h-4 mr-1" />
-                    SEBI Registered Research Analyst - INH000022066
+                    SEBI Registered Research Analyst - INH000013129
                   </div>
                 </div>
                 <h1 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight">
@@ -487,20 +487,20 @@ const AKVHomepage = () => {
               </div>
 
               <div className="space-y-6">
-                <a href="tel:+917416931626" className="block">
+                <a href="tel:+919179231876" className="block">
                   <div className="flex items-center space-x-4">
                     <div className="bg-teal-600 p-3 rounded-lg">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="font-semibold">Call Us</div>
-                      <div className="text-gray-300">+91 7416931626</div>
+                      <div className="text-gray-300">+91 9179231876</div>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:abishekkvenkatesh@outlook.com"
+                  href="mailto:agbpl2354@gmail.com"
                   className="block"
                 >
                   <div className="flex items-center space-x-4">
@@ -510,14 +510,14 @@ const AKVHomepage = () => {
                     <div>
                       <div className="font-semibold">Email Us</div>
                       <div className="text-gray-300">
-                        abishekkvenkatesh@outlook.com
+                      agbpl2354@gmail.com
                       </div>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="https://maps.google.com/?q=H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet, Saroornagar Mandal, Hyderabad, Telangana-500035"
+                  href="https://maps.google.com/?q=202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA PRADESH - 462011"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -529,15 +529,14 @@ const AKVHomepage = () => {
                     <div>
                       <div className="font-semibold">Visit Us</div>
                       <div className="text-gray-300">
-                        H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
-                        Saroornagar Mandal, Hyderabad, Telangana-500035
+                        202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA PRADESH - 462011
                       </div>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/917416931626"
+                  href="https://wa.me/91919179231876"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -555,7 +554,7 @@ const AKVHomepage = () => {
                     </div>
                     <div>
                       <div className="font-semibold">WhatsApp Us</div>
-                      <div className="text-gray-300">+91 7416931626</div>
+                      <div className="text-gray-300">+91 9179231876</div>
                     </div>
                   </div>
                 </a>
@@ -705,20 +704,20 @@ const AKVHomepage = () => {
                 <div>
                   <div className="font-medium">Registered Office:</div>
                   <p>
-                    H.No 11-9-173, Ground Floor, LaxmiNagar, Kothapet,
+                     202, Akanksha Complex,
                     <br />
-                    Saroornagar Mandal,
+                    MP nagar Zone-I,
                     <br />
-                    Hyderabad, Telangana-500035
+                    BHOPAL, MADHYA PRADESH-500035
                   </p>
                 </div>
                 <div>
                   <div className="font-medium">Telephone:</div>
-                  <p>+91 7416931626</p>
+                  <p>+91 9179231876</p>
                 </div>
                 <div>
                   <div className="font-medium">Email:</div>
-                  <p className="break-all">abishekkvenkatesh@outlook.com</p>
+                  <p className="break-all">agbpl2354@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -767,7 +766,7 @@ const AKVHomepage = () => {
                   </h5>
                   <p>
                     <span className="font-medium">Registered name:</span>{" "}
-                    Abishek Kondagunta Venkatesh
+                    Arpit Goyal
                     <br />
                     <span className="font-medium">
                       Type of registration:
@@ -775,10 +774,10 @@ const AKVHomepage = () => {
                     Individual
                     <br />
                     <span className="font-medium">Registration No:</span>{" "}
-                    INH000022066
+                    INH000013129
                     <br />
-                    <span className="font-medium">Validity:</span> July 28, 2025
-                    – July 27, 2030
+                    <span className="font-medium">Validity:</span> Oct 06, 2023
+                    – Oct 05, 2028
                   </p>
                 </div>
               </div>
@@ -792,7 +791,7 @@ const AKVHomepage = () => {
                 © 2025 AKV Equity Research. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <span>SEBI Registered Research Analyst - INH000022066</span>
+                <span>SEBI Registered Research Analyst - INH000013129</span>
               </div>
             </div>
           </div>
