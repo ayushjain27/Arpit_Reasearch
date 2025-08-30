@@ -72,7 +72,7 @@ const GrievanceRedressal = () => {
                       PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +919179231876
+                      +918878810223
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
                       <a href="mailto:agbpl2354@gmail.com">
@@ -97,7 +97,7 @@ const GrievanceRedressal = () => {
                       PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +919179231876
+                      +918878810223
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
                       <a href="mailto:agbpl2354@gmail.com">
@@ -122,7 +122,7 @@ const GrievanceRedressal = () => {
                       PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +919179231876
+                      +918878810223
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
                       <a href="mailto:agbpl2354@gmail.com">
@@ -147,7 +147,7 @@ const GrievanceRedressal = () => {
                       PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +919179231876
+                      +918878810223
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
                       <a href="mailto:agbpl2354@gmail.com">
@@ -172,7 +172,7 @@ const GrievanceRedressal = () => {
                       PRADESH - 462011
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-gray-700">
-                      +919179231876
+                      +918878810223
                     </td>
                     <td className="border border-gray-200 px-4 py-3 text-sm text-blue-600 hover:underline">
                       <a href="mailto:agbpl2354@gmail.com">

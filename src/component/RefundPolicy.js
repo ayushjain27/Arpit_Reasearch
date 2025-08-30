@@ -32,14 +32,13 @@ const RefundPolicy = () => {
               <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg">
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    AKV Equity Research by Arpit Goyal is
-                    committed to deliver high quality services with transparency
-                    in line with the Securities and Exchange Board of India
-                    (SEBI) Research Analyst regulations 2014 and related
-                    guidelines. This refund policy outlines the conditions under
-                    which refunds may be requested for our paid services;
-                    ensuring clarity for our clients and alignment with
-                    regulatory standards.
+                    Arpit Goyal Research by Arpit Goyal is committed to deliver
+                    high quality services with transparency in line with the
+                    Securities and Exchange Board of India (SEBI) Research
+                    Analyst regulations 2014 and related guidelines. This refund
+                    policy outlines the conditions under which refunds may be
+                    requested for our paid services; ensuring clarity for our
+                    clients and alignment with regulatory standards.
                   </p>
                 </div>
               </section>
@@ -52,15 +51,15 @@ const RefundPolicy = () => {
                 <div className="space-y-2 text-gray-700">
                   <p>
                     This refund policy applies to all paid services provided by
-                    Arpit Goyal including but not limited to
-                    research reports, research recommendation subscriptions,
-                    educational courses, content and related services. It is not
-                    based on the outcome of investments or research
-                    recommendations or results of the services provided as all
-                    investments and services are subject to market risks and we
-                    do not guarantee any assured profits or returns. Clients are
-                    advised to review our terms and conditions and SEBI
-                    regulations before subscribing to our services.
+                    Arpit Goyal including but not limited to research reports,
+                    research recommendation subscriptions, educational courses,
+                    content and related services. It is not based on the outcome
+                    of investments or research recommendations or results of the
+                    services provided as all investments and services are
+                    subject to market risks and we do not guarantee any assured
+                    profits or returns. Clients are advised to review our terms
+                    and conditions and SEBI regulations before subscribing to
+                    our services.
                   </p>
                 </div>
               </section>
@@ -90,12 +89,12 @@ const RefundPolicy = () => {
                     <h3 className="font-semibold">b. Premature Termination</h3>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>
-                        If the client or Arpit Goyal terminates
-                        the service before the subscription period expires, you
-                        are entitled to a refund on a pro-rata basis for the
-                        unutilized full months, subject to the conditions in
-                        Section 3 (Non-Refundable Scenarios) and Section 5
-                        (Refund Process).
+                        If the client or Arpit Goyal terminates the service
+                        before the subscription period expires, you are entitled
+                        to a refund on a pro-rata basis for the unutilized full
+                        months, subject to the conditions in Section 3
+                        (Non-Refundable Scenarios) and Section 5 (Refund
+                        Process).
                       </li>
                     </ul>
                   </div>
@@ -118,10 +117,10 @@ const RefundPolicy = () => {
                     <h3 className="font-semibold">d. Regulatory actions</h3>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
                       <li>
-                        If Arpit Goyal's SEBI registration is
-                        suspended or cancelled due to regulatory violations, or
-                        if we cease operations; you are entitled to a refund on
-                        pro-rata basis for the unutilized period.
+                        If Arpit Goyal's SEBI registration is suspended or
+                        cancelled due to regulatory violations, or if we cease
+                        operations; you are entitled to a refund on pro-rata
+                        basis for the unutilized period.
                       </li>
                     </ul>
                   </div>
@@ -268,8 +267,8 @@ const RefundPolicy = () => {
                   <div>
                     <h3 className="font-semibold">Submit a request:</h3>
                     <p className="pl-5 mt-1">
-                      E-mail us at agbpl2354@gmail.com with the
-                      following details:
+                      E-mail us at agbpl2354@gmail.com with the following
+                      details:
                     </p>
                     <ul className="list-disc pl-10 mt-1 space-y-1">
                       <li>Full name</li>
@@ -325,7 +324,7 @@ const RefundPolicy = () => {
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Name - Arpit Goyal</li>
                     <li>E-mail: agbpl2354@gmail.com</li>
-                    <li>Mobile: +91 9179231876</li>
+                    <li>Mobile: +91 8878810223</li>
                   </ul>
                 </div>
               </section>
@@ -393,7 +392,7 @@ const RefundPolicy = () => {
           <div className="mt-6 text-center text-sm text-gray-500">
             <p>SEBI Registered Research Analyst - INH000013129</p>
             <p className="mt-1">
-              © {new Date().getFullYear()} AKV Equity Research. All rights
+              © {new Date().getFullYear()} Arpit Goyal Research. All rights
               reserved.
             </p>
           </div>

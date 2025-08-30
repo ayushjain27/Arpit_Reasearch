@@ -3,7 +3,7 @@ import { ArrowRight, Phone, Mail, MapPin, Clock } from "lucide-react";
 import HeaderTab from "./HeaderTab";
 
 const ContactUs = () => {
-  const phoneNumber = "+919179231876";
+  const phoneNumber = "+918878810223";
   const whatsappLink = `https://wa.me/${phoneNumber.replace(/\D/g, '')}`;
   const mailToLink = "mailto:agbpl2354@gmail.com";
 

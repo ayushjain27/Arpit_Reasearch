@@ -13,6 +13,10 @@ import {
   PieChart,
   LineChart,
   FileText,
+  Target,
+  Shield,
+  Eye,
+  Zap,
 } from "lucide-react";
 import HeaderTab from "./HeaderTab";
 import Logo from "./image/Logos.png";
@@ -44,13 +48,13 @@ const AKVHomepage = () => {
       icon: LineChart,
       title: "Technical Analysis",
       description:
-        "Advanced volume analytics indicators and orderflow based strategies for optimal entries and exits",
+        "We trade with a focus on explosive price–volume patterns that define true market leaders",
       features: [
-        "Volume Profile framework",
-        "Orderflow analysis and metrics",
-        "Relative Strength profiling",
-        "Statistical methods using average true range techniques",
-        "Avwap based strategies",
+        "VCP Framework – Spotting volatility contraction setups that launch powerful breakouts.",
+        "High-Tight Flags – Capturing rare patterns that precede sharp, accelerated moves.",
+        "IPO Breakouts – Identifying fresh leaders from IPO bases early in their trend.",
+        "Relative Strength – Staying aligned with outperforming sectors and stocks.",
+        "Volume & VWAP Analytics – Validating institutional accumulation and managing risk precisely.",
       ],
     },
     {
@@ -79,18 +83,6 @@ const AKVHomepage = () => {
         "Seasonal Trends",
       ],
     },
-    // {
-    //   icon: Target,
-    //   title: 'Market Connect',
-    //   description: 'Direct access to market insights and networking opportunities with industry experts.',
-    //   features: [
-    //     'Exclusive Webinars',
-    //     'Analyst Meetups',
-    //     'Corporate Access Events',
-    //     'Earnings Call Highlights',
-    //     'Management Interviews'
-    //   ]
-    // }
   ];
 
   const AnimatedLogo = () => (
@@ -98,9 +90,9 @@ const AKVHomepage = () => {
       <div className="flex items-flex-start space-x-3">
         <div className="relative w-150 h-100">
           <img
-            src={Logo} // Replace with your actual logo path
+            src={Logo}
             alt="Arpit Goyal Logo"
-            className="h-13 w-auto" // Adjust height as needed
+            className="h-13 w-auto"
           />
         </div>
       </div>
@@ -118,40 +110,32 @@ const AKVHomepage = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="pt-4 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden"
+        className="pt-4 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute inset-0 bg-white opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium flex items-center">
-                    <FileText className="w-4 h-4 mr-1" />
+                  <div className="bg-teal-500 bg-opacity-20 text-teal-200 px-4 py-2 rounded-full text-sm font-medium flex items-center">
+                    <FileText className="w-4 h-4 mr-2" />
                     SEBI Registered Research Analyst - INH000013129
                   </div>
                 </div>
-                <h1 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
                   Access research, analysis and unlock knowledge.
                 </h1>
-                  <h1 className=" text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">
-                    {" "}
-                    All guided by advanced data driven methods
-                  </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <h1 className="text-3xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-300">
+                  All guided by advanced data driven methods
+                </h1>
+                <p className="text-xl text-blue-100 leading-relaxed">
                   Professional-grade equity research for both traders and
                   investors, grounded in robust data analysis and methodologies.
                   Join our community to get actionable insights created by
                   leveraging advanced analytics and systematic approaches.
                 </p>
               </div>
-
-              {/* <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="bg-teal-600 text-white px-8 py-4 rounded-full hover:bg-teal-700 transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
-                  <span>Explore Research</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div> */}
             </div>
 
             <div className="relative">
@@ -162,25 +146,19 @@ const AKVHomepage = () => {
                   className="w-full h-auto rounded-xl object-cover"
                 />
               </div>
-              {/* <div className="mt-6 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-                <div className="flex items-center space-x-2 text-sm text-gray-600">
-                  <AlertCircle className="w-4 h-4" />
-                  <span>Past performance is not indicative of future results. Investments are subject to market risk.</span>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-4 bg-white">
+      <section id="services" className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-1 mb-4">
-            <h2 className="text-4xl font-bold text-gray-900">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Our Research Framework
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600">
               Comprehensive equity research services designed using robust
               framework backed by strong data insights.
             </p>
@@ -192,33 +170,28 @@ const AKVHomepage = () => {
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 group"
+                  className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-teal-300 transform hover:-translate-y-2"
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-teal-100 p-3 rounded-xl group-hover:bg-teal-200 transition-colors duration-300">
-                      <Icon className="w-8 h-8 text-teal-600" />
+                  <div className="flex flex-col h-full">
+                    <div className="bg-gradient-to-r from-teal-500 to-blue-500 p-4 rounded-xl w-14 h-14 flex items-center justify-center group-hover:from-teal-600 group-hover:to-blue-600 transition-colors duration-300 mb-6">
+                      <Icon className="w-7 h-7 text-white" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, i) => (
-                          <li key={i} className="flex items-center space-x-2">
-                            {feature ===
-                            "Statistical methods using average true range techniques" ? (
-                              <CheckCircle className="w-8 h-8 text-teal-600" />
-                            ) : (
-                              <CheckCircle className="w-4 h-4 text-teal-600" />
-                            )}
-                            <span className="text-gray-700">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
+                      {service.description}
+                    </p>
+
+                    <ul className="space-y-3">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-start space-x-3">
+                          <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               );
@@ -227,254 +200,122 @@ const AKVHomepage = () => {
         </div>
       </section>
 
-      {/* Research Reports Section */}
-      {/* <section id="research" className="py-20 bg-gray-50">
+      {/* Methodology Section */}
+      <section id="methodology" className="py-16 bg-gradient-to-tr from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-bold text-gray-900">Latest Research Reports</h2>
-            <p className="text-xl text-gray-600">
-              Evidence-based investment theses with complete transparency
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {researchReports.map((report, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-start">
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                      {report.type}
-                    </span>
-                    <span className={`px-3 py-1 rounded-full text-sm font-bold ${
-                      report.rating === 'BUY' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
-                    }`}>
-                      {report.rating}
-                    </span>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors duration-200">
-                      {report.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{report.subtitle}</p>
-                  </div>
-
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
-                    <div className="flex items-center space-x-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{report.date}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Target className="w-4 h-4" />
-                      <span>{report.target}</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <p className="text-sm font-medium text-gray-700">Covered Companies:</p>
-                    <div className="grid grid-cols-2 gap-2">
-                      {report.companies.map((company, i) => (
-                        <div key={i} className="bg-gray-50 p-2 rounded">
-                          <div className="font-medium text-sm">{company.name}</div>
-                          <div className="flex justify-between text-xs">
-                            <span>₹{company.current}</span>
-                            <span className={`font-medium ${
-                              company.upside.startsWith('+') ? 'text-green-600' : 'text-red-600'
-                            }`}>
-                              {company.upside}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="pt-2">
-                    <p className="text-sm font-medium text-gray-700">Performance vs Benchmark:</p>
-                    <div className="grid grid-cols-2 gap-2 text-xs mt-1">
-                      <div className="bg-gray-50 p-2 rounded">
-                        <div>1 Year</div>
-                        <div className="font-medium">{report.performance.oneYear}</div>
-                      </div>
-                      <div className="bg-gray-50 p-2 rounded">
-                        <div>3 Year</div>
-                        <div className="font-medium">{report.performance.threeYear}</div>
-                      </div>
-                      <div className="bg-gray-50 p-2 rounded">
-                        <div>5 Year</div>
-                        <div className="font-medium">{report.performance.fiveYear}</div>
-                      </div>
-                      <div className="bg-gray-50 p-2 rounded">
-                        <div>Benchmark</div>
-                        <div className="font-medium">{report.performance.benchmark}</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button className="w-full mt-4 bg-teal-600 text-white py-3 rounded-lg hover:bg-teal-700 transition-colors duration-200 flex items-center justify-center space-x-2">
-                    <Download className="w-4 h-4" />
-                    <span>Download Sample</span>
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <button className="border-2 border-teal-600 text-teal-600 px-8 py-3 rounded-full hover:bg-teal-50 transition-all duration-200 flex items-center justify-center space-x-2 mx-auto">
-              <span>View All Research</span>
-              <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Team Section */}
-      <section id="team" className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <div className="text-center space-y-1 mb-4">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Meet Our Research Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              45+ years of combined market experience across bull and bear
-              cycles
-            </p>
-          </div> */}
-
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-all duration-300"
-              >
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-24 h-24 bg-teal-100 rounded-full flex items-center justify-center mb-4 text-3xl">
-                    <User className="w-10 h-10 text-teal-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900">
-                    {member.name}
-                  </h3>
-                  <div className="text-teal-600 font-medium">{member.role}</div>
-                  <div className="text-sm text-gray-500 mt-1">
-                    {member.experience} experience
-                  </div>
-
-                  <div className="mt-4 text-sm text-gray-700">
-                    <div className="font-medium">Specialization:</div>
-                    <div>{member.specialization}</div>
-                  </div>
-
-                  <div className="mt-3 text-xs text-gray-500">
-                    <div className="font-medium">Education:</div>
-                    <div>{member.education}</div>
-                  </div>
-
-                  <div className="mt-4 text-sm text-gray-600">
-                    "{member.bio}"
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
-          <div className="my-4 bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Our Research Methodology
-            </h3>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-4">
+            </h2>
+            <p className="text-xl text-gray-600">
               We use technical indicators, fundamental analysis and quantitative
-              data analysis to identify potential opportunities on a short term
-              and long term basis.
+              data analysis to identify potential opportunities.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-teal-600 font-bold text-lg mb-2">
-                  1. Technical Screening
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+              <div className="text-teal-600 font-bold text-xl mb-4 flex items-center">
+                <div className="bg-teal-100 p-3 rounded-lg mr-4">
+                  <Zap className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-gray-600">
-                  Quantitative filters for momentum, volume, and statistical
-                  patterns
-                </p>
+                1. Technical Screening
               </div>
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-teal-600 font-bold text-lg mb-2">
-                  2. Fundamental Analysis
+              <p className="text-gray-600">
+                Quantitative filters for momentum, volume, and statistical
+                patterns
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+              <div className="text-teal-600 font-bold text-xl mb-4 flex items-center">
+                <div className="bg-teal-100 p-3 rounded-lg mr-4">
+                  <Eye className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-gray-600">
-                  Deep dive into financials, management, industry trends, and
-                  valuations
-                </p>
+                2. Fundamental Analysis
               </div>
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-teal-600 font-bold text-lg mb-2">
-                  3. Data Validation
+              <p className="text-gray-600">
+                Deep dive into financials, management, industry trends, and
+                valuations
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+              <div className="text-teal-600 font-bold text-xl mb-4 flex items-center">
+                <div className="bg-teal-100 p-3 rounded-lg mr-4">
+                  <Shield className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-gray-600">
-                  Insights backed by real time data analysis
-                </p>
+                3. Data Validation
+              </div>
+              <p className="text-gray-600">
+                Insights backed by real time data analysis and risk assessment
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-10 text-white shadow-xl">
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-3xl font-bold mb-8 text-center">
+                Why Choose Our Research?
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex items-start space-x-4">
+                  <Target className="w-7 h-7 text-teal-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-lg">Focused Approach</h4>
+                    <p className="text-teal-100 mt-2">
+                      We concentrate on high-probability setups with favorable
+                      risk-reward ratios
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <BarChart3 className="w-7 h-7 text-teal-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-lg">Data-Backed Insights</h4>
+                    <p className="text-teal-100 mt-2">
+                      All recommendations are supported by thorough data
+                      analysis
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <Users className="w-7 h-7 text-teal-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-lg">Community Support</h4>
+                    <p className="text-teal-100 mt-2">
+                      Join a community of serious investors and traders
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <Award className="w-7 h-7 text-teal-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-lg">SEBI Registered</h4>
+                    <p className="text-teal-100 mt-2">
+                      Compliant with all regulatory requirements and standards
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      {/* <section id="about" className="py-20 bg-white">
+      {/* Team Section */}
+      <section id="team" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              {[
-                {
-                  icon: Eye,
-                  title: "Deep Market Insights",
-                  description:
-                    "Our research goes beyond surface-level analysis to uncover hidden opportunities and risks in the market.",
-                },
-                {
-                  icon: Shield,
-                  title: "Risk Management Focus",
-                  description:
-                    "Every recommendation comes with detailed risk assessment and capital protection strategies.",
-                },
-                {
-                  icon: Zap,
-                  title: "Real-time Updates",
-                  description:
-                    "Stay informed with instant alerts on your investments and market-moving events.",
-                },
-                {
-                  icon: Users,
-                  title: "Expert Team",
-                  description:
-                    "Led by SEBI Registered Research Analyst with decades of experience in Indian equity markets.",
-                },
-              ].map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex items-start space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors duration-200"
-                  >
-                    <div className="bg-teal-100 p-2 rounded-lg">
-                      <Icon className="w-6 h-6 text-teal-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                        {feature.title}
-                      </h3>
-                      <p className="text-gray-600">{feature.description}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          {/* Content remains the same but with updated styling if needed */}
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-8">
@@ -487,31 +328,26 @@ const AKVHomepage = () => {
               </div>
 
               <div className="space-y-6">
-                <a href="tel:+919179231876" className="block">
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-teal-600 p-3 rounded-lg">
+                <a href="tel:+918878810223" className="block group">
+                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
+                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="font-semibold">Call Us</div>
-                      <div className="text-gray-300">+91 9179231876</div>
+                      <div className="text-gray-300">+91 8878810223</div>
                     </div>
                   </div>
                 </a>
 
-                <a
-                  href="mailto:agbpl2354@gmail.com"
-                  className="block"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-teal-600 p-3 rounded-lg">
+                <a href="mailto:agbpl2354@gmail.com" className="block group">
+                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
+                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
                       <Mail className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="font-semibold">Email Us</div>
-                      <div className="text-gray-300">
-                      agbpl2354@gmail.com
-                      </div>
+                      <div className="text-gray-300">agbpl2354@gmail.com</div>
                     </div>
                   </div>
                 </a>
@@ -520,29 +356,30 @@ const AKVHomepage = () => {
                   href="https://maps.google.com/?q=202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA PRADESH - 462011"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block group"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-teal-600 p-3 rounded-lg">
+                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
+                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="font-semibold">Visit Us</div>
                       <div className="text-gray-300">
-                        202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA PRADESH - 462011
+                        202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
+                        PRADESH - 462011
                       </div>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/91919179231876"
+                  href="https://wa.me/91918878810223"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block group"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-teal-600 p-3 rounded-lg">
+                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
+                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
                       <svg
                         className="w-6 h-6"
                         fill="currentColor"
@@ -554,13 +391,13 @@ const AKVHomepage = () => {
                     </div>
                     <div>
                       <div className="font-semibold">WhatsApp Us</div>
-                      <div className="text-gray-300">+91 9179231876</div>
+                      <div className="text-gray-300">+91 8878810223</div>
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6 rounded-2xl">
+              <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-8 rounded-2xl shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">Working Hours</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
@@ -589,16 +426,16 @@ const AKVHomepage = () => {
               <div className="flex space-x-4">
                 {/* Telegram */}
                 <a
-                  href="https://t.me/akvequityresearch"
+                  href="https://t.me/AnantaResearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
+                  className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
                   aria-label="Telegram"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+                    width="18"
+                    height="18"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
@@ -608,16 +445,16 @@ const AKVHomepage = () => {
 
                 {/* X (Twitter) */}
                 <a
-                  href="https://x.com/akveq_"
+                  href="https://x.com/arpit1223?s=11"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
+                  className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
                   aria-label="Twitter"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+                    width="18"
+                    height="18"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
@@ -630,7 +467,7 @@ const AKVHomepage = () => {
             {/* Services Column */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-3 text-gray-400">
                 <li>
                   <a
                     href="#"
@@ -661,7 +498,7 @@ const AKVHomepage = () => {
             {/* Research Column */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Research</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-3 text-gray-400">
                 <li>
                   <a
                     href="#"
@@ -700,11 +537,11 @@ const AKVHomepage = () => {
             {/* Right Column - Contact Info */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Contact Information</h4>
-              <div className="text-gray-400 space-y-2">
+              <div className="text-gray-400 space-y-3">
                 <div>
                   <div className="font-medium">Registered Office:</div>
                   <p>
-                     202, Akanksha Complex,
+                    202, Akanksha Complex,
                     <br />
                     MP nagar Zone-I,
                     <br />
@@ -713,7 +550,7 @@ const AKVHomepage = () => {
                 </div>
                 <div>
                   <div className="font-medium">Telephone:</div>
-                  <p>+91 9179231876</p>
+                  <p>+91 8878810223</p>
                 </div>
                 <div>
                   <div className="font-medium">Email:</div>
@@ -765,8 +602,8 @@ const AKVHomepage = () => {
                     Registration Details:
                   </h5>
                   <p>
-                    <span className="font-medium">Registered name:</span>{" "}
-                    Arpit Goyal
+                    <span className="font-medium">Registered name:</span> Arpit
+                    Goyal
                     <br />
                     <span className="font-medium">
                       Type of registration:
@@ -788,7 +625,7 @@ const AKVHomepage = () => {
           <div className="border-t border-gray-700 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400">
-                © 2025 AKV Equity Research. All rights reserved.
+                © 2025 Arpit Goyal Research. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
                 <span>SEBI Registered Research Analyst - INH000013129</span>

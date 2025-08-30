@@ -35,19 +35,18 @@ const HeaderTab = () => {
   }, [complianceOpen]);
 
   const AnimatedLogo = () => (
-    <div className="flex flex-col">
-      <div className="flex items-flex-start space-x-3">
-        <div className="relative w-100 md:w-150 h-8 md:h-100">
-          <img
-            src={Logo} // Replace with your actual logo path
-            alt="AKV Equity Research Logo"
-            className="h-11 w-auto" // Adjust height as needed
-          />
+    <div className="max-w-7xl">
+      <div className="flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <div className="bg-teal-600 h-10 w-10 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+            AG
+          </div>
+          <div>
+            <div className="font-bold text-gray-900">Arpit Goyal Research</div>
+            <div className="text-xs text-teal-600">SEBI Registered Analyst</div>
+          </div>
         </div>
       </div>
-      <span className="text-xs sm:text-sm text-gray-600 mt-0.5 ml-3">
-        by Arpit Goyal
-      </span>
     </div>
   );
 
@@ -70,7 +69,7 @@ const HeaderTab = () => {
               Home
             </a>
             <a
-              href="https://superprofile.bio/akvequityresearch"
+              href="/researchAndServices"
               className="text-gray-700 hover:text-teal-600 transition-colors duration-200 font-medium text-sm lg:text-base"
             >
               Research Services
@@ -182,7 +181,7 @@ const HeaderTab = () => {
               Home
             </a>
             <a
-              href="https://superprofile.bio/akvequityresearch"
+              href="/researchAndServices"
               className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
               onClick={() => setMobileMenuOpen(false)}
             >
