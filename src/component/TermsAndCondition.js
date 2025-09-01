@@ -35,7 +35,7 @@ const TermsAndConditions = () => {
                     Goyal ("Research Analyst") registered with the Securities
                     and Exchange Board of India (SEBI) as a Research Analyst
                     (RA) under registration No. INH000013129; BSE Enlistment No.
-                    &lt;to be updated&gt;
+                    5680
                   </p>
                   <p>
                     By subscribing to the research services, clients acknowledge
@@ -131,8 +131,7 @@ const TermsAndConditions = () => {
                           <li>
                             We are duly registered with SEBI as a research
                             analyst under registration no. INH000013129 from
-                            July 28, 2025; BSE enlistment no. &lt;to be
-                            updated&gt; and compliant with the SEBI (research
+                            July 28, 2025; BSE enlistment no. 5680 and compliant with the SEBI (research
                             analyst) regulations, 2014.
                           </li>
                           <li>
