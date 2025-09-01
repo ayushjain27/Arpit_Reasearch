@@ -20,7 +20,8 @@ import {
 } from "lucide-react";
 import HeaderTab from "./HeaderTab";
 import Logo from "./image/Logos.png";
-import Image from "./image/stock market.webp";
+import Image from "./image/Fundamental-Analysis.jpg";
+import Image1 from "./image/decode-market-trends.jpeg";
 
 const AKVHomepage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,6 +61,7 @@ const AKVHomepage = () => {
     {
       icon: BarChart3,
       title: "Fundamental Analysis",
+      image: Image,
       description:
         "Deep dive into company financials, business models, and competitive positioning to identify undervalued opportunities.",
       features: [
@@ -73,6 +75,7 @@ const AKVHomepage = () => {
     {
       icon: PieChart,
       title: "Decode market trends",
+      image: Image1,
       description:
         "Identify emerging market trends and sector rotations to stay ahead of the curve.",
       features: [
@@ -89,11 +92,7 @@ const AKVHomepage = () => {
     <div className="flex flex-col">
       <div className="flex items-flex-start space-x-3">
         <div className="relative w-150 h-100">
-          <img
-            src={Logo}
-            alt="Arpit Goyal Logo"
-            className="h-13 w-auto"
-          />
+          <img src={Logo} alt="Arpit Goyal Logo" className="h-13 w-auto" />
         </div>
       </div>
       <span className=" text-center text-xs sm:text-sm text-white md:mt-0.5">
@@ -152,7 +151,10 @@ const AKVHomepage = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <section
+        id="services"
+        className="py-16 bg-gradient-to-b from-white to-gray-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -183,6 +185,15 @@ const AKVHomepage = () => {
                     <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                       {service.description}
                     </p>
+                    {service.image && (
+                      <div className="mb-8 rounded-xl overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-50 object-cover"
+                        />
+                      </div>
+                    )}
 
                     <ul className="space-y-3">
                       {service.features.map((feature, i) => (
@@ -201,7 +212,10 @@ const AKVHomepage = () => {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="py-16 bg-gradient-to-tr from-gray-50 to-blue-50">
+      <section
+        id="methodology"
+        className="py-16 bg-gradient-to-tr from-gray-50 to-blue-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -274,7 +288,9 @@ const AKVHomepage = () => {
                 <div className="flex items-start space-x-4">
                   <BarChart3 className="w-7 h-7 text-teal-200 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-lg">Data-Backed Insights</h4>
+                    <h4 className="font-semibold text-lg">
+                      Data-Backed Insights
+                    </h4>
                     <p className="text-teal-100 mt-2">
                       All recommendations are supported by thorough data
                       analysis
@@ -315,7 +331,10 @@ const AKVHomepage = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+      <section
+        id="contact"
+        className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-8">
