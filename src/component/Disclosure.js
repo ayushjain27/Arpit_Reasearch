@@ -59,7 +59,7 @@ const StandardDisclosures = () => {
                   <p>
                   Arpit Goyal is a SEBI registered Research
                     Analyst with registration no. <strong>INH000013129</strong>{" "}
-                    valid from July 28, 2025 – July 27, 2030.
+                    valid from Oct 06, 2023 – Oct 05, 2028.
                   </p>
                   <p>
                     The research analyst is engaged in offering research and

@@ -131,7 +131,7 @@ const TermsAndConditions = () => {
                           <li>
                             We are duly registered with SEBI as a research
                             analyst under registration no. INH000013129 from
-                            July 28, 2025; BSE enlistment no. 5680 and compliant with the SEBI (research
+                            Oct 06, 2023; BSE enlistment no. 5680 and compliant with the SEBI (research
                             analyst) regulations, 2014.
                           </li>
                           <li>
@@ -227,12 +227,12 @@ const TermsAndConditions = () => {
                         please refer to the grievance redressal section of our
                         website:
                         <a
-                          href="www.akvequityresearch.com"
+                          href="https://www.arpitgoyal.in"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-teal-600 hover:underline flex items-center"
                         >
-                          www.akvequityresearch.com
+                          https://www.arpitgoyal.in
                           <ExternalLink className="w-4 h-4" />
                         </a>
                       </p>
@@ -449,12 +449,12 @@ const TermsAndConditions = () => {
                   <p>
                     For further details or updates, visit our website:{" "}
                     <a
-                      href="https://www.akvequityresearch.com"
+                      href="https://www.arpitgoyal.in"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-teal-600 hover:underline ml-2"
                     >
-                      (https://www.akvequityresearch.com){""}
+                       https://www.arpitgoyal.in
                       <ExternalLink className="inline w-4 h-4" />
                     </a>
                   </p>

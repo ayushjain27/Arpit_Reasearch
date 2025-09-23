@@ -358,10 +358,10 @@ const RefundPolicy = () => {
                     requirements. The latest version of the refund policy will
                     be available on our website at{" "}
                     <a
-                      href="http://akvequityresearch.com/refundpolicy"
+                      href=" https://www.arpitgoyal.in/refundpolicy"
                       className="text-blue-600 hover:underline"
                     >
-                      https://akvequityresearch.com/refundpolicy
+                       https://www.arpitgoyal.in/refundpolicy
                     </a>{" "}
                     with the "last updated" date specified. Clients are
                     encouraged to review this policy periodically.
