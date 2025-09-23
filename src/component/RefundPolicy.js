@@ -17,7 +17,7 @@ const RefundPolicy = () => {
             </h1>
             <div className="mt-2 text-white text-sm">
               <p>Arpit Goyal</p>
-              <p>{`SEBI Registered Research Analyst No. INH000013129 | BSE Enlistment 5680`}</p>
+              <p>{`SEBI Registered Research Analyst No. INH000013129 | BSE Enlistment 5860`}</p>
               <p>Date of update: August 1, 2025</p>
             </div>
           </div>
