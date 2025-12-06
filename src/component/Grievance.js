@@ -192,7 +192,7 @@ const GrievanceRedressal = () => {
             {/* Resolution Timeline */}
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 mt-4">
               <p className="text-blue-800 font-medium">
-                We aim to resolve all complaints within 15 days from the date of
+                We aim to resolve all complaints within 21 days from the date of
                 receipt.
               </p>
             </div>
