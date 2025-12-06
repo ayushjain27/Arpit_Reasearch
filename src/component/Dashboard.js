@@ -119,7 +119,7 @@ const AKVHomepage = () => {
                 <div className="flex items-center space-x-3">
                   <div className="bg-teal-500 bg-opacity-20 text-teal-200 px-4 py-2 rounded-full text-sm font-medium flex items-center">
                     <FileText className="w-4 h-4 mr-2" />
-                    SEBI Registered Research Analyst - INH000013129
+                    SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
                   </div>
                 </div>
                 <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
@@ -630,10 +630,10 @@ const AKVHomepage = () => {
                     Individual
                     <br />
                     <span className="font-medium">Registration No:</span>{" "}
-                    INH000013129
+                    INH000013129 | BSE Enlistment 5860
                     <br />
                     <span className="font-medium">Validity:</span> Oct 06, 2023
-                    – Oct 05, 2028
+                    – Perpetual
                   </p>
                 </div>
               </div>
@@ -647,7 +647,7 @@ const AKVHomepage = () => {
                 © 2025 Arpit Goyal Research. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <span>SEBI Registered Research Analyst - INH000013129</span>
+                <span>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</span>
               </div>
             </div>
           </div>

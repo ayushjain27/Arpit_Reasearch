@@ -58,8 +58,8 @@ const StandardDisclosures = () => {
                 <div className="space-y-1 text-gray-700">
                   <p>
                   Arpit Goyal is a SEBI registered Research
-                    Analyst with registration no. <strong>INH000013129</strong>{" "}
-                    valid from Oct 06, 2023 – Oct 05, 2028.
+                    Analyst with registration no. <strong>INH000013129 | BSE Enlistment 5860</strong>{" "}
+                    valid from Oct 06, 2023 – Perpetual.
                   </p>
                   <p>
                     The research analyst is engaged in offering research and
@@ -277,7 +277,7 @@ const StandardDisclosures = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000013129</p>
+            <p>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
             <p className="mt-1">
               © {new Date().getFullYear()} Arpit Goyal Research. All rights
               reserved.

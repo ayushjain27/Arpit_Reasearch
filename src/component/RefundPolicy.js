@@ -390,7 +390,7 @@ const RefundPolicy = () => {
 
           {/* Footer Note */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <p>SEBI Registered Research Analyst - INH000013129</p>
+            <p>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
             <p className="mt-1">
               © {new Date().getFullYear()} Arpit Goyal Research. All rights
               reserved.

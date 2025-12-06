@@ -159,7 +159,7 @@ const CodeOfConduct = () => {
           {/* Footer Note */}
           <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
             <p className="text-sm text-gray-500 text-center">
-              SEBI Registered Research Analyst - INH000013129
+              SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
             </p>
           </div>
         </div>

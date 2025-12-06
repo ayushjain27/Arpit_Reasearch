@@ -107,7 +107,7 @@ const InternalPolicies = () => {
                     <p>
                       This policy shall be applicable to Research Analyst
                       Arpit Goyal holding SEBI Registration No
-                      INH000013129 and Associates; if any of the Research
+                      INH000013129 | BSE Enlistment 5860 and Associates; if any of the Research
                       Analyst.
                     </p>
                   </div>
@@ -424,7 +424,7 @@ const InternalPolicies = () => {
                       <p className="font-medium">
                         Mr. Arpit Goyal
                       </p>
-                      <p>Place: Hyderabad</p>
+                      <p>Place: Bhopal</p>
                       <p>Date: June 28, 2025</p>
                     </div>
                   </div>
@@ -434,7 +434,7 @@ const InternalPolicies = () => {
 
             {/* Footer Note */}
             <div className="mt-6 text-center text-sm text-gray-500">
-              <p>SEBI Registered Research Analyst - INH000013129</p>
+              <p>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
               <p className="mt-1">
                 © {new Date().getFullYear()} Arpit Goyal Research. All rights
                 reserved.

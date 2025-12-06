@@ -91,7 +91,7 @@ const ResearchServices = () => {
               <AnimatedLogo />
             </div>
             <div className="text-gray-400 text-sm">
-              <p>SEBI Registered Research Analyst - INH000013129</p>
+              <p>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
               <p className="mt-2">© 2025 Arpit Goyal Research. All rights reserved.</p>
             </div>
           </div>

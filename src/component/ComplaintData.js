@@ -185,7 +185,91 @@ const ComplaintData = () => {
                               1
                             </td>
                             <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              April, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              2
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              May, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              3
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              June, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              4
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
                               July, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              5
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              August, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              6
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              September, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              7
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              October, 2025
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              8
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              November, 2025
                             </td>
                             <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
                             <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
@@ -253,6 +337,30 @@ const ComplaintData = () => {
                               1
                             </td>
                             <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              2023-24
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              2
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              2024-25
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
+                          </tr>
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
+                              3
+                            </td>
+                            <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">
                               2025-26
                             </td>
                             <td className="border border-gray-200 px-4 py-2 text-sm text-gray-700">0</td>
@@ -291,7 +399,7 @@ const ComplaintData = () => {
 
             {/* Footer Note */}
             <div className="mt-6 text-center text-sm text-gray-500">
-              <p>SEBI Registered Research Analyst - INH000013129</p>
+              <p>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
               <p className="mt-1">
                 © {new Date().getFullYear()} Arpit Goyal Research. All rights
                 reserved.
