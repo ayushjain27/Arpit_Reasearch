@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { TrendingUp, Mail, Phone, MapPin, FileText } from "lucide-react";
-import HeaderTab from "./HeaderTab";
+import { TrendingUp, Mail, MapPin, FileText } from "lucide-react";
 import Logo from "./image/Logos.png";
 
 const ResearchServices = () => {
@@ -14,19 +13,6 @@ const ResearchServices = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const AnimatedLogo = () => (
-    <div className="flex flex-col">
-      <div className="flex items-flex-start space-x-3">
-        <div className="relative w-150 h-100">
-          <img src={Logo} alt="Arpit Goyal Logo" className="h-13 w-auto" />
-        </div>
-      </div>
-      <span className="text-center text-xs sm:text-sm text-white md:mt-0.5">
-        by Arpit Goyal
-      </span>
-    </div>
-  );
 
   return (
     <div>

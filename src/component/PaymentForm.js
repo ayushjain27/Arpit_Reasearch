@@ -1,10 +1,10 @@
+/* eslint-disable no-unused-vars */
 import {
   AlertCircle,
   CreditCard,
   Loader,
   Mail,
   Phone,
-  User,
   X,
 } from "lucide-react";
 import React, { useEffect, useState } from "react";

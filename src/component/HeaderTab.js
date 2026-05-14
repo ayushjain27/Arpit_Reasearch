@@ -5,8 +5,6 @@ import Logo from "./image/Logos.png";
 const HeaderTab = ({
   onHomeClick,
   onServicesClick,
-  onResearchServicesClick,
-  onTeamClick,
   onContactClick,
   onInvestorCharterClick,
   onInternalPoliciesClick,
