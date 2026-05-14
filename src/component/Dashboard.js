@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect, useRef } from "react";
 import {
   TrendingUp,
@@ -5,11 +6,6 @@ import {
   Users,
   Award,
   CheckCircle,
-  ArrowRight,
-  Phone,
-  Mail,
-  MapPin,
-  DollarSign,
   PieChart,
   LineChart,
   FileText,
@@ -36,15 +32,6 @@ import ResearchServices from "./ResearchServices";
 
 const AKVHomepage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    experience: "",
-    message: "",
-  });
-  const [formErrors, setFormErrors] = useState({});
 
   // Refs for navigation
   const homeRef = useRef(null);

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { ExternalLink, CheckCircle } from "lucide-react";
-import HeaderTab from "./HeaderTab";
 
 const InvestorCharter = () => {
   const [activeTab, setActiveTab] = useState("vision");

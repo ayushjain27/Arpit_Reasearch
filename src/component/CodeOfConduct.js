@@ -1,6 +1,5 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
-import HeaderTab from "./HeaderTab";
 
 const CodeOfConduct = () => {
   return (

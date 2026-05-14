@@ -1,6 +1,5 @@
 import React from "react";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import HeaderTab from "./HeaderTab";
 
 const ContactUs = () => {
   const phoneNumber = "+918878810223";

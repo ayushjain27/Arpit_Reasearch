@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { CheckCircle } from "lucide-react";
-import HeaderTab from "./HeaderTab";
 
 const InternalPolicies = () => {
   const [activeTab, setActiveTab] = useState("introduction");

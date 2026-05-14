@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderTab from "./HeaderTab";
 
 const PrivacyPolicy = () => {
   return (
