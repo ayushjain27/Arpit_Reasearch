@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   TrendingUp,
   BarChart3,
@@ -22,6 +22,17 @@ import HeaderTab from "./HeaderTab";
 import Logo from "./image/Logos.png";
 import Image from "./image/Fundamental-Analysis.jpg";
 import Image1 from "./image/decode-market-trends.jpeg";
+import InvestorCharterContent from "./InvestorCharter";
+import InternalPoliciesContent from "./InternalPolices";
+import StandardDisclosuresContent from "./Disclosure";
+import CodeOfConductContent from "./CodeOfConduct";
+import GrievanceRedressalContent from "./Grievance";
+import RefundPolicyContent from "./RefundPolicy";
+import PrivacyPolicyContent from "./PrivacyPolicy";
+import TermsAndConditionsContent from "./TermsAndCondition";
+import ComplaintDataContent from "./ComplaintData";
+import ContactUsContent from "./ContactUs";
+import ResearchServices from "./ResearchServices";
 
 const AKVHomepage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,6 +46,21 @@ const AKVHomepage = () => {
   });
   const [formErrors, setFormErrors] = useState({});
 
+  // Refs for navigation
+  const homeRef = useRef(null);
+  const servicesRef = useRef(null);
+  const teamRef = useRef(null);
+  const investorCharterRef = useRef(null);
+  const internalPoliciesRef = useRef(null);
+  const standardDisclosuresRef = useRef(null);
+  const codeOfConductRef = useRef(null);
+  const grievanceRedressalRef = useRef(null);
+  const refundPolicyRef = useRef(null);
+  const privacyPolicyRef = useRef(null);
+  const termsAndConditionsRef = useRef(null);
+  const complaintDataRef = useRef(null);
+  const contactUsRef = useRef(null);
+
   // Scroll handler
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +69,20 @@ const AKVHomepage = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth scroll function
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      const offset = 80;
+      const elementPosition = ref.current.offsetTop;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const services = [
     {
@@ -95,7 +135,7 @@ const AKVHomepage = () => {
           <img src={Logo} alt="Arpit Goyal Logo" className="h-13 w-auto" />
         </div>
       </div>
-      <span className=" text-center text-xs sm:text-sm text-white md:mt-0.5">
+      <span className="text-center text-xs sm:text-sm text-white md:mt-0.5">
         by Arpit Goyal
       </span>
     </div>
@@ -103,15 +143,32 @@ const AKVHomepage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <HeaderTab />
+      {/* Header - Pass navigation props */}
+      <HeaderTab
+        onHomeClick={() => scrollToSection(homeRef)}
+        onServicesClick={() => scrollToSection(servicesRef)}
+        onTeamClick={() => scrollToSection(teamRef)}
+        onContactClick={() => scrollToSection(contactUsRef)}
+        onInvestorCharterClick={() => scrollToSection(investorCharterRef)}
+        onInternalPoliciesClick={() => scrollToSection(internalPoliciesRef)}
+        onStandardDisclosuresClick={() =>
+          scrollToSection(standardDisclosuresRef)
+        }
+        onCodeOfConductClick={() => scrollToSection(codeOfConductRef)}
+        onGrievanceRedressalClick={() => scrollToSection(grievanceRedressalRef)}
+        onRefundPolicyClick={() => scrollToSection(refundPolicyRef)}
+        onPrivacyPolicyClick={() => scrollToSection(privacyPolicyRef)}
+        onTermsAndConditionsClick={() => scrollToSection(termsAndConditionsRef)}
+        onComplaintDataClick={() => scrollToSection(complaintDataRef)}
+      />
 
       {/* Hero Section */}
       <section
         id="home"
+        ref={homeRef}
         className="pt-4 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-white opacity-5"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -119,7 +176,8 @@ const AKVHomepage = () => {
                 <div className="flex items-center space-x-3">
                   <div className="bg-teal-500 bg-opacity-20 text-teal-200 px-4 py-2 rounded-full text-sm font-medium flex items-center">
                     <FileText className="w-4 h-4 mr-2" />
-                    SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
+                    SEBI Registered Research Analyst - INH000013129 | BSE
+                    Enlistment 5860
                   </div>
                 </div>
                 <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
@@ -152,7 +210,8 @@ const AKVHomepage = () => {
 
       {/* Services Section */}
       <section
-        id="services"
+        // id="services"
+        // ref={servicesRef}
         className="py-16 bg-gradient-to-b from-white to-gray-50"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -199,7 +258,9 @@ const AKVHomepage = () => {
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-start space-x-3">
                           <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
+                          <span className="text-gray-700 text-sm">
+                            {feature}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -214,6 +275,7 @@ const AKVHomepage = () => {
       {/* Methodology Section */}
       <section
         id="methodology"
+        ref={teamRef}
         className="py-16 bg-gradient-to-tr from-gray-50 to-blue-50"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -323,110 +385,116 @@ const AKVHomepage = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section id="team" className="bg-white py-16">
+      {/* Standard Disclosures Section */}
+      <section
+        id="standard-disclosures"
+        ref={standardDisclosuresRef}
+        className="py-16 bg-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Content remains the same but with updated styling if needed */}
+          <StandardDisclosuresContent />
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Code of Conduct Section */}
       <section
-        id="contact"
-        className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white"
+        id="code-of-conduct"
+        ref={codeOfConductRef}
+        className="py-16 bg-gray-50"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl font-bold mb-6">Get Started Today</h2>
-                <p className="text-xl text-gray-300 leading-relaxed">
-                  Ready to transform your stock market journey? Contact us for
-                  subscribing to our services
-                </p>
-              </div>
+          <CodeOfConductContent />
+        </div>
+      </section>
 
-              <div className="space-y-6">
-                <a href="tel:+918878810223" className="block group">
-                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
-                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
-                      <Phone className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">Call Us</div>
-                      <div className="text-gray-300">+91 8878810223</div>
-                    </div>
-                  </div>
-                </a>
+      {/* Internal Policies Section */}
+      <section
+        id="internal-policies"
+        ref={internalPoliciesRef}
+        className="py-16 bg-white"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <InternalPoliciesContent />
+        </div>
+      </section>
 
-                <a href="mailto:agbpl2354@gmail.com" className="block group">
-                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
-                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">Email Us</div>
-                      <div className="text-gray-300">agbpl2354@gmail.com</div>
-                    </div>
-                  </div>
-                </a>
+      {/* Grievance Redressal Section */}
+      <section
+        id="grievance-redressal"
+        ref={grievanceRedressalRef}
+        className="py-16 bg-gray-50"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <GrievanceRedressalContent />
+        </div>
+      </section>
 
-                <a
-                  href="https://maps.google.com/?q=202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA PRADESH - 462011"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
-                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
-                      <MapPin className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">Visit Us</div>
-                      <div className="text-gray-300">
-                        202, Akanksha Complex, MP nagar Zone-I BHOPAL MADHYA
-                        PRADESH - 462011
-                      </div>
-                    </div>
-                  </div>
-                </a>
+      {/* Investor Charter Section */}
+      <section
+        id="investor-charter"
+        ref={investorCharterRef}
+        className="py-16 bg-white"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <InvestorCharterContent />
+        </div>
+      </section>
 
-                <a
-                  href="https://wa.me/91918878810223"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group"
-                >
-                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-white bg-opacity-5 hover:bg-opacity-10 transition-all duration-300">
-                    <div className="bg-teal-500 p-3 rounded-lg group-hover:bg-teal-600 transition-colors">
-                      <svg
-                        className="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="font-semibold">WhatsApp Us</div>
-                      <div className="text-gray-300">+91 8878810223</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+      {/* Complaint Data Section */}
+      <section
+        id="complaint-data"
+        ref={complaintDataRef}
+        className="py-16 bg-gray-50"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ComplaintDataContent />
+        </div>
+      </section>
 
-              <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-8 rounded-2xl shadow-lg">
-                <h3 className="text-xl font-semibold mb-4">Working Hours</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>9:00 AM - 5:00 PM</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Refund Policy Section */}
+      <section
+        id="refund-policy"
+        ref={refundPolicyRef}
+        className="py-16 bg-white"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <RefundPolicyContent />
+        </div>
+      </section>
+
+      {/* Privacy Policy Section */}
+      <section
+        id="privacy-policy"
+        ref={privacyPolicyRef}
+        className="py-16 bg-gray-50"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <PrivacyPolicyContent />
+        </div>
+      </section>
+
+      {/* Terms & Conditions Section */}
+      <section
+        id="terms-conditions"
+        ref={termsAndConditionsRef}
+        className="py-16 bg-white"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <TermsAndConditionsContent />
+        </div>
+      </section>
+
+      {/* Contact Us Section */}
+      <section id="contact-us" ref={contactUsRef} className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ContactUsContent />
+        </div>
+      </section>
+
+      {/* Contact Us Section */}
+      <section id="services" ref={servicesRef} className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ResearchServices />
         </div>
       </section>
 
@@ -434,46 +502,40 @@ const AKVHomepage = () => {
       <footer className="bg-gray-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Left Column - Logo and Social */}
             <div className="space-y-4">
               <AnimatedLogo />
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-400 leading-relaxed text-sm">
                 Empowering investors with data-driven research and strategic
                 insights for sustainable wealth creation in the Indian equity
                 markets.
               </p>
               <div className="flex space-x-4">
-                {/* Telegram */}
                 <a
                   href="https://t.me/AnantaResearch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
-                  aria-label="Telegram"
+                  className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="16"
+                    height="16"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
                   </svg>
                 </a>
-
-                {/* X (Twitter) */}
                 <a
                   href="https://x.com/arpit1223?s=11"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
-                  aria-label="Twitter"
+                  className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center hover:bg-teal-700 transition-colors duration-200"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="16"
+                    height="16"
                     fill="currentColor"
                     viewBox="0 0 16 16"
                   >
@@ -482,14 +544,16 @@ const AKVHomepage = () => {
                 </a>
               </div>
             </div>
-
-            {/* Services Column */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-3 text-gray-400">
+              <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(servicesRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
                     Technical Analysis
@@ -498,6 +562,10 @@ const AKVHomepage = () => {
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(servicesRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
                     Fundamental Analysis
@@ -506,6 +574,10 @@ const AKVHomepage = () => {
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(servicesRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
                     Market Trends
@@ -513,58 +585,130 @@ const AKVHomepage = () => {
                 </li>
               </ul>
             </div>
-
-            {/* Research Column */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Research</h4>
-              <ul className="space-y-3 text-gray-400">
+              <h4 className="text-lg font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(standardDisclosuresRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Sector Reports
+                    Standard Disclosures
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(codeOfConductRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Stock Recommendations
+                    Code of Conduct
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(internalPoliciesRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Market Outlook
+                    Internal Policies
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(grievanceRedressalRef);
+                    }}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    IPO Analysis
+                    Grievance Redressal
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(investorCharterRef);
+                    }}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Investor Charter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(complaintDataRef);
+                    }}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Complaint Data
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(refundPolicyRef);
+                    }}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Refund Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(privacyPolicyRef);
+                    }}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection(termsAndConditionsRef);
+                    }}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Terms & Conditions
                   </a>
                 </li>
               </ul>
             </div>
-
-            {/* Right Column - Contact Info */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Contact Information</h4>
-              <div className="text-gray-400 space-y-3">
+              <div className="text-gray-400 space-y-2 text-sm">
                 <div>
                   <div className="font-medium">Registered Office:</div>
-                  <p>
+                  <p className="text-sm">
                     202, Akanksha Complex,
                     <br />
                     MP nagar Zone-I,
                     <br />
-                    BHOPAL, MADHYA PRADESH-500035
+                    BHOPAL, MADHYA PRADESH - 462011
                   </p>
                 </div>
                 <div>
@@ -639,15 +783,16 @@ const AKVHomepage = () => {
               </div>
             </div>
           </div>
-
-          {/* Copyright Section */}
           <div className="border-t border-gray-700 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="text-gray-400">
+              <div className="text-gray-400 text-sm">
                 © 2025 Arpit Goyal Research. All rights reserved.
               </div>
-              <div className="flex items-center space-x-6 text-sm text-gray-400">
-                <span>SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</span>
+              <div className="flex items-center space-x-6 text-xs md:text-sm text-gray-400">
+                <span>
+                  SEBI Registered Research Analyst - INH000013129 | BSE
+                  Enlistment 5860
+                </span>
               </div>
             </div>
           </div>
