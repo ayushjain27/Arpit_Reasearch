@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Logo from "./image/Logos.png";
+import Logo from "./image/Ananta_Research_logo.png";
 
 const HeaderTab = ({
   onHomeClick,

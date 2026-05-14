@@ -24,7 +24,7 @@ const RefundPolicy = () => {
         <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 md:p-6 rounded-lg">
           <div className="space-y-4 text-gray-700 text-sm md:text-base">
             <p>
-              Arpit Goyal Research by Arpit Goyal is committed to deliver high
+              Ananta Research by Arpit Goyal is committed to deliver high
               quality services with transparency in line with the Securities and
               Exchange Board of India (SEBI) Research Analyst regulations 2014
               and related guidelines. This refund policy outlines the conditions
@@ -369,7 +369,7 @@ const RefundPolicy = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Arpit Goyal Research. All rights
+          © {new Date().getFullYear()} Ananta Research. All rights
           reserved.
         </p>
       </div>

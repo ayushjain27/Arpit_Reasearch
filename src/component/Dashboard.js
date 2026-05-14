@@ -15,7 +15,7 @@ import {
   Zap,
 } from "lucide-react";
 import HeaderTab from "./HeaderTab";
-import Logo from "./image/Logos.png";
+import Logo from "./image/Ananta_Research_logo.png";
 import Image from "./image/Fundamental-Analysis.jpg";
 import Image1 from "./image/decode-market-trends.jpeg";
 import InvestorCharterContent from "./InvestorCharter";
@@ -773,7 +773,7 @@ const AKVHomepage = () => {
           <div className="border-t border-gray-700 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
-                © 2025 Arpit Goyal Research. All rights reserved.
+                © 2025 Ananta Research. All rights reserved.
               </div>
               <div className="flex items-center space-x-6 text-xs md:text-sm text-gray-400">
                 <span>

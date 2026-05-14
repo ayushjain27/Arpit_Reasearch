@@ -867,7 +867,7 @@ const InvestorCharter = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Arpit Goyal Research. All rights
+          © {new Date().getFullYear()} Ananta Research. All rights
           reserved.
         </p>
       </div>

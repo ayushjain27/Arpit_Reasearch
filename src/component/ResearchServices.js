@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TrendingUp, Mail, MapPin, FileText } from "lucide-react";
-import Logo from "./image/Logos.png";
+import Logo from "./image/Ananta_Research_logo.png";
 
 const ResearchServices = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +23,7 @@ const ResearchServices = () => {
             <img
               src={Logo}
               alt="Company Logo"
-              className="mx-auto h-20 w-auto mb-6"
+              className="mx-auto h-40 w-auto mb-6"
             />
             <div className="flex items-center justify-center mb-4">
               <div className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-medium flex items-center">
