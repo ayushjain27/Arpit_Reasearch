@@ -33,7 +33,11 @@ const InvestorCharter = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+    <div
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+      role="region"
+      aria-label="Investor Charter"
+    >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
@@ -46,11 +50,18 @@ const InvestorCharter = () => {
 
       {/* Tabs - sticky with white background */}
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
-        <nav className="flex overflow-x-auto">
+        <nav
+          className="flex overflow-x-auto"
+          aria-label="Investor Charter navigation"
+        >
           <div className="flex space-x-1 px-4">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
+                role="tab"
+                aria-selected={activeTab === tab.id}
+                aria-controls={`panel-${tab.id}`}
+                id={`tab-${tab.id}`}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
                 className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                   activeTab === tab.id
@@ -66,7 +77,11 @@ const InvestorCharter = () => {
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      <div
+        className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto"
+        role="region"
+        aria-label="Investor Charter content"
+      >
         {/* Vision & Mission Section */}
         <section ref={visionRef} className="scroll-mt-24">
           <div className="space-y-4">
@@ -867,8 +882,7 @@ const InvestorCharter = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Ananta Research. All rights
-          reserved.
+          © {new Date().getFullYear()} Ananta Research. All rights reserved.
         </p>
       </div>
     </div>

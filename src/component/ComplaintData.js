@@ -3,9 +3,9 @@ import React from "react";
 
 const ComplaintData = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Complaint Data">
       {/* Header with title - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Complaint Data
         </h1>
@@ -15,10 +15,14 @@ const ComplaintData = () => {
       </div>
 
       {/* Content Area */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
+      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto" role="region" aria-label="Complaint Data content">
         {/* Complaint Data Section */}
         <div className="space-y-6">
+          {/* Monthly Complaint Data - Changed from no heading to h2 */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
+            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+              Monthly Complaint Data
+            </h2>
             <p className="text-gray-700 mb-4 text-sm md:text-base">
               Data for the month ending - July 2025
             </p>
@@ -163,7 +167,7 @@ const ComplaintData = () => {
             <div className="mt-4 text-xs md:text-sm text-gray-600 space-y-2">
               <p className="font-medium">
                 Number of complaints received during month against the RA due to
-                impersonation by some other entity:
+                impersonation by some other entity: 0
               </p>
               <p>
                 <strong>Note:</strong> In case of any complaints received
@@ -189,11 +193,11 @@ const ComplaintData = () => {
             </div>
           </div>
 
-          {/* Trend of monthly disposal of complaints */}
+          {/* Trend of monthly disposal of complaints - Changed from h3 to h2 */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h3 className="text-base md:text-lg font-semibold text-teal-700 mb-3">
-              Trend of monthly disposal of complaints
-            </h3>
+            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+              Trend of Monthly Disposal of Complaints
+            </h2>
 
             <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
@@ -285,11 +289,11 @@ const ComplaintData = () => {
             </div>
           </div>
 
-          {/* Trend of annual disposal of complaints */}
+          {/* Trend of annual disposal of complaints - Changed from h4 to h3 (since it's a sub-section of the above) */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h4 className="text-base md:text-lg font-semibold text-teal-700 mb-3">
-              Trend of annual disposal of complaints
-            </h4>
+            <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-3">
+              Trend of Annual Disposal of Complaints
+            </h3>
 
             <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">

@@ -11,13 +11,19 @@ const ResearchServices = () => {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
+    // Check initial scroll position
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div>
+    <div
+      className="min-h-screen"
+      role="region"
+      aria-label="Research Services content"
+    >
       {/* Coming Soon Section */}
-      <section className="flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 pt-20 pb-20">
+      <section className="flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen pt-20 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <img
@@ -44,11 +50,11 @@ const ResearchServices = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-8">
             <div className="bg-white p-5 rounded-xl shadow-md">
               <div className="bg-teal-100 w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <TrendingUp className="w-5 h-5 text-teal-600" />
+                <TrendingUp className="w-5 h-5 text-teal-700" />
               </div>
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
+              <h2 className="text-base font-semibold text-gray-900 mb-1">
                 Research
-              </h3>
+              </h2>
               <p className="text-sm text-gray-600">
                 Data-driven equity analysis
               </p>
@@ -56,23 +62,30 @@ const ResearchServices = () => {
 
             <div className="bg-white p-5 rounded-xl shadow-md">
               <div className="bg-teal-100 w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <Mail className="w-5 h-5 text-teal-600" />
+                <Mail className="w-5 h-5 text-teal-700" />
               </div>
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
+              <h2 className="text-base font-semibold text-gray-900 mb-1">
                 Updates
-              </h3>
+              </h2>
               <p className="text-sm text-gray-600">Regular market insights</p>
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-md">
               <div className="bg-teal-100 w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                <MapPin className="w-5 h-5 text-teal-600" />
+                <MapPin className="w-5 h-5 text-teal-700" />
               </div>
-              <h3 className="text-base font-semibold text-gray-900 mb-1">
+              <h2 className="text-base font-semibold text-gray-900 mb-1">
                 Expertise
-              </h3>
+              </h2>
               <p className="text-sm text-gray-600">SEBI registered analysis</p>
             </div>
+          </div>
+
+          {/* Add some dummy content to make the page scrollable */}
+          <div className="mt-12 text-gray-400 text-sm">
+            <p>Scroll down to see the scroll-to-top button appear</p>
+            <div className="h-32"></div>
+            <p>↓</p>
           </div>
         </div>
       </section>
@@ -80,8 +93,10 @@ const ResearchServices = () => {
       {/* Scroll to top button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-8 right-8 bg-teal-600 text-white p-3 rounded-full shadow-lg hover:bg-teal-700 transition-all duration-300 ${
-          isScrolled ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        className={`fixed bottom-8 right-8 bg-teal-700 text-white p-3 rounded-full shadow-lg hover:bg-teal-800 transition-all duration-300 z-50 ${
+          isScrolled
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10 pointer-events-none"
         }`}
       >
         <TrendingUp className="w-5 h-5" />

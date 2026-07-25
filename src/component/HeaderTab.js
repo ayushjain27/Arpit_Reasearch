@@ -55,7 +55,7 @@ const HeaderTab = ({
           <img src={Logo} alt="Arpit Goyal Logo" className="h-11 w-auto" />
         </div>
       </div>
-      <span className="text-xs sm:text-sm text-teal-600 mt-0.5 ml-0">
+      <span className="text-xs sm:text-sm text-teal-700 mt-0.5 ml-0">
         by Arpit Goyal
       </span>
     </div>
@@ -114,8 +114,13 @@ const HeaderTab = ({
       ref={headerRef}
       className="fixed top-0 w-full z-50 transition-all duration-300
         bg-white/95 backdrop-blur-md shadow-lg"
+      role="banner"
+      aria-label="Main header"
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav 
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
         <div className="flex justify-between items-center h-14 md:h-16">
           <AnimatedLogo />
 
@@ -125,7 +130,7 @@ const HeaderTab = ({
               onClick={() => {
                 if (onHomeClick) onHomeClick();
               }}
-              className="text-gray-700 hover:text-teal-600 transition-colors duration-200 font-medium text-sm lg:text-base"
+              className="text-gray-700 hover:text-teal-700 transition-colors duration-200 font-medium text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-lg px-2 py-1"
             >
               Home
             </button>
@@ -133,14 +138,14 @@ const HeaderTab = ({
               onClick={() => {
                 if (onServicesClick) onServicesClick();
               }}
-              className="text-gray-700 hover:text-teal-600 transition-colors duration-200 font-medium text-sm lg:text-base"
+              className="text-gray-700 hover:text-teal-700 transition-colors duration-200 font-medium text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-lg px-2 py-1"
             >
               Research Services
             </button>
             <div className="relative">
               <button
                 onClick={() => setComplianceOpen(!complianceOpen)}
-                className="flex items-center text-gray-700 hover:text-teal-600 transition-colors duration-200 font-medium text-sm lg:text-base"
+                className="flex items-center text-gray-700 hover:text-teal-700 transition-colors duration-200 font-medium text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-lg px-2 py-1"
               >
                 RA Compliance
                 <ChevronDown
@@ -158,7 +163,7 @@ const HeaderTab = ({
                         if (item.onClick) item.onClick();
                         setComplianceOpen(false);
                       }}
-                      className="block w-full text-left px-3 lg:px-4 py-2 text-xs lg:text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors duration-200"
+                      className="block w-full text-left px-3 lg:px-4 py-2 text-xs lg:text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                     >
                       {item.name}
                     </button>
@@ -170,7 +175,7 @@ const HeaderTab = ({
               onClick={() => {
                 if (onContactClick) onContactClick();
               }}
-              className="text-gray-700 hover:text-teal-600 transition-colors duration-200 font-medium text-sm lg:text-base"
+              className="text-gray-700 hover:text-teal-700 transition-colors duration-200 font-medium text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-lg px-2 py-1"
             >
               Contact Us
             </button>
@@ -180,7 +185,8 @@ const HeaderTab = ({
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-teal-600 focus:outline-none"
+              className="text-gray-700 hover:text-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-lg p-1"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {mobileMenuOpen ? (
                 <X className="w-5 h-5" />
@@ -201,7 +207,7 @@ const HeaderTab = ({
                 if (onHomeClick) onHomeClick();
                 closeMobileMenu();
               }}
-              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
             >
               Home
             </button>
@@ -210,14 +216,14 @@ const HeaderTab = ({
                 if (onServicesClick) onServicesClick();
                 closeMobileMenu();
               }}
-              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
             >
               Research Services
             </button>
             <div className="px-3 py-2">
               <button
                 onClick={() => setComplianceOpen(!complianceOpen)}
-                className="flex items-center text-sm font-medium text-gray-700 hover:text-teal-600 w-full"
+                className="flex items-center text-sm font-medium text-gray-700 hover:text-teal-700 w-full focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 rounded-md px-2 py-1"
               >
                 RA Compliance
                 <ChevronDown
@@ -235,7 +241,7 @@ const HeaderTab = ({
                         if (item.onClick) item.onClick();
                         closeMobileMenu();
                       }}
-                      className="block w-full text-left px-3 py-2 text-xs text-gray-700 hover:text-teal-600 hover:bg-gray-50 rounded-md"
+                      className="block w-full text-left px-3 py-2 text-xs text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
                     >
                       {item.name}
                     </button>
@@ -248,7 +254,7 @@ const HeaderTab = ({
                 if (onContactClick) onContactClick();
                 closeMobileMenu();
               }}
-              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50 rounded-md"
+              className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
             >
               Contact Us
             </button>

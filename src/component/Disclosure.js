@@ -2,7 +2,7 @@ import React from "react";
 
 const StandardDisclosures = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+<div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Standard Disclosures">
       {/* Header Section - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
@@ -11,7 +11,7 @@ const StandardDisclosures = () => {
       </div>
 
       {/* Content Sections */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto" role="region" aria-label="Standard Disclosures content">
         {/* Purpose Section */}
         <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 md:p-6 rounded-lg">
           <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">

@@ -5,14 +5,14 @@ const GrievanceRedressal = () => {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
       {/* Header with title - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Grievance Redressal/Escalation Matrix
         </h1>
       </div>
 
       {/* Scrollable Content Area */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
+      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto" role="region" aria-label="Grievance Redressal content">
         {/* Steps Section */}
         <div>
           <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
@@ -28,7 +28,7 @@ const GrievanceRedressal = () => {
         </div>
 
         {/* Contact Table */}
-        <div className="overflow-x-auto">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Grievance Redressal">
           <table className="min-w-full border border-gray-200 text-sm">
             <thead className="bg-gray-50">
               <tr>
@@ -70,7 +70,7 @@ const GrievanceRedressal = () => {
                 <td className="border border-gray-200 px-3 py-2">
                   <a
                     href="mailto:agbpl2354@gmail.com"
-                    className="text-teal-600 hover:underline"
+                    className="text-teal-700 hover:underline font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>
@@ -98,7 +98,7 @@ const GrievanceRedressal = () => {
                 <td className="border border-gray-200 px-3 py-2">
                   <a
                     href="mailto:agbpl2354@gmail.com"
-                    className="text-teal-600 hover:underline"
+                    className="text-teal-700 hover:underline font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>
@@ -126,7 +126,7 @@ const GrievanceRedressal = () => {
                 <td className="border border-gray-200 px-3 py-2">
                   <a
                     href="mailto:agbpl2354@gmail.com"
-                    className="text-teal-600 hover:underline"
+                    className="text-teal-700 hover:underline font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>
@@ -154,7 +154,7 @@ const GrievanceRedressal = () => {
                 <td className="border border-gray-200 px-3 py-2">
                   <a
                     href="mailto:agbpl2354@gmail.com"
-                    className="text-teal-600 hover:underline"
+                    className="text-teal-700 hover:underline font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>
@@ -182,7 +182,7 @@ const GrievanceRedressal = () => {
                 <td className="border border-gray-200 px-3 py-2">
                   <a
                     href="mailto:agbpl2354@gmail.com"
-                    className="text-teal-600 hover:underline"
+                    className="text-teal-700 hover:underline font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>
@@ -221,7 +221,7 @@ const GrievanceRedressal = () => {
               href="https://scores.sebi.gov.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-600 hover:underline flex items-center text-sm md:text-base"
+              className="text-teal-700 hover:underline flex items-center text-sm md:text-base font-medium"
             >
               Link to SCORES Portal
               <ExternalLink className="w-4 h-4 ml-1" />
@@ -238,7 +238,7 @@ const GrievanceRedressal = () => {
               href="https://smartodr.in/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-600 hover:underline flex items-center text-sm md:text-base"
+              className="text-teal-700 hover:underline flex items-center text-sm md:text-base font-medium"
             >
               Link to ODR Portal
               <ExternalLink className="w-4 h-4 ml-1" />

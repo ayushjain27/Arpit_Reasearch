@@ -2,7 +2,7 @@ import React from "react";
 
 const RefundPolicy = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+<div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Refund Policy">
       {/* Header Section - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
@@ -19,7 +19,7 @@ const RefundPolicy = () => {
       </div>
 
       {/* Content Sections */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto" role="region" aria-label="Refund Policy content">
         {/* Introduction Section */}
         <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 md:p-6 rounded-lg">
           <div className="space-y-4 text-gray-700 text-sm md:text-base">

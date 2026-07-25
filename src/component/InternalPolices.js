@@ -29,9 +29,13 @@ const InternalPolicies = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+    <div
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+      role="region"
+      aria-label="Internal Policies and Procedures"
+    >
       {/* Header with title - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           INTERNAL POLICIES AND PROCEDURES TO EFFECTIVELY ADDRESS CONFLICT OF
           INTEREST
@@ -40,15 +44,22 @@ const InternalPolicies = () => {
 
       {/* Tabs - sticky with white background */}
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
-        <nav className="flex overflow-x-auto">
+        <nav
+          className="flex overflow-x-auto"
+          aria-label="Internal Policies navigation"
+        >
           <div className="flex space-x-1 px-4">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
+                role="tab"
+                aria-selected={activeTab === tab.id}
+                aria-controls={`panel-${tab.id}`}
+                id={`tab-${tab.id}`}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
                 className={`px-3 py-2 text-xs md:text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                   activeTab === tab.id
-                    ? "border-teal-500 text-teal-600"
+                    ? "border-teal-700 text-teal-700"
                     : "border-transparent hover:border-gray-300 hover:text-gray-700"
                 }`}
               >
@@ -60,7 +71,11 @@ const InternalPolicies = () => {
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
+      <div
+        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
+        role="region"
+        aria-label="Internal Policies content"
+      >
         {/* Introduction Section */}
         <section ref={introductionRef} className="scroll-mt-24">
           <div className="space-y-2">
@@ -179,14 +194,14 @@ const InternalPolicies = () => {
             </h2>
             <div className="text-gray-700 text-sm md:text-base space-y-2">
               <div className="flex items-start space-x-2">
-                <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                 <span>
                   The Research Report issued by Research Analyst shall be based
                   on adequate documentary research evidence.
                 </span>
               </div>
               <div className="flex items-start space-x-2">
-                <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                 <span>
                   Research Analyst shall not provide any promise or assurance of
                   favourable review in research report to the Company or
@@ -284,7 +299,7 @@ const InternalPolicies = () => {
                   Research Analyst shall disclose in public appearance with
                   regard to receipt of compensation:
                   <div className="flex items-start space-x-2 mt-2">
-                    <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                     <span>
                       Whether Research Analyst or its/his/her/their associates
                       have received any compensation from the subject company in
@@ -292,7 +307,7 @@ const InternalPolicies = () => {
                     </span>
                   </div>
                   <div className="flex items-start space-x-2 mt-1">
-                    <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                     <span>
                       Whether the subject company is/was client of Research
                       Analyst during 12 months preceding the date of
@@ -362,17 +377,17 @@ const InternalPolicies = () => {
                   Research Analyst shall maintain and preserve following records
                   for a minimum period of 5 years:
                   <div className="flex items-start space-x-2 mt-2">
-                    <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                     <span>Research recommendation provided</span>
                   </div>
                   <div className="flex items-start space-x-2 mt-1">
-                    <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                     <span>
                       Rationale for arriving at research recommendation
                     </span>
                   </div>
                   <div className="flex items-start space-x-2 mt-1">
-                    <CheckCircle className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-teal-700 mt-0.5 flex-shrink-0" />
                     <span>Record of public appearance</span>
                   </div>
                 </li>
@@ -405,8 +420,7 @@ const InternalPolicies = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Ananta Research. All rights
-          reserved.
+          © {new Date().getFullYear()} Ananta Research. All rights reserved.
         </p>
       </div>
     </div>

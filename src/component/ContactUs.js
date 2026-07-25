@@ -7,9 +7,9 @@ const ContactUs = () => {
   const mailToLink = "mailto:agbpl2354@gmail.com";
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+<div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Contact Us">
       {/* Header Section - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">CONTACT US</h1>
       </div>
 
@@ -52,7 +52,7 @@ const ContactUs = () => {
                   <div className="flex flex-wrap gap-2 mt-2">
                     <a
                       href={`tel:${phoneNumber}`}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors flex items-center gap-2 text-xs md:text-sm"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-teal-700 text-white rounded-lg hover:bg-teal-800 transition-colors flex items-center gap-2 text-xs md:text-sm"
                     >
                       <Phone className="w-3 h-3 md:w-4 md:h-4" />
                       Call Now
@@ -89,7 +89,7 @@ const ContactUs = () => {
                   </h3>
                   <a
                     href={mailToLink}
-                    className="text-teal-600 hover:underline text-xs md:text-sm break-all"
+                    className="text-teal-700 hover:underline text-xs md:text-sm break-all font-medium"
                   >
                     agbpl2354@gmail.com
                   </a>

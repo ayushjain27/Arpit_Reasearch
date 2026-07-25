@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 const CodeOfConduct = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+<div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Code of Conduct">
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">

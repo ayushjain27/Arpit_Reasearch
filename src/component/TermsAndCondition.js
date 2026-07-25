@@ -3,16 +3,24 @@ import { ExternalLink } from "lucide-react";
 
 const TermsAndConditions = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+    <div
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+      role="region"
+      aria-label="Terms and Conditions"
+    >
       {/* Header Section - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           TERMS AND CONDITIONS
         </h1>
       </div>
 
       {/* Content Sections */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      <div
+        className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto"
+        role="region"
+        aria-label="Terms and Conditions content"
+      >
         {/* Agreement Section */}
         <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 md:p-6 rounded-lg">
           <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
@@ -193,7 +201,7 @@ const TermsAndConditions = () => {
               email their concerns to the grievance officer at{" "}
               <a
                 href="mailto:agbpl2354@gmail.com"
-                className="text-teal-600 hover:underline"
+                className="text-teal-700 hover:underline font-medium"
               >
                 agbpl2354@gmail.com
               </a>
@@ -209,7 +217,7 @@ const TermsAndConditions = () => {
                   href="https://www.arpitgoyal.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-teal-600 hover:underline flex items-center mt-1"
+                  className="text-teal-700 hover:underline flex items-center mt-1 font-medium"
                 >
                   https://www.arpitgoyal.in
                   <ExternalLink className="w-4 h-4 ml-1" />
@@ -331,7 +339,7 @@ const TermsAndConditions = () => {
                       href="https://scores.sebi.gov.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-teal-700 hover:underline font-medium"
                     >
                       www.scores.sebi.gov.in
                       <ExternalLink className="inline w-4 h-4 ml-1" />
@@ -344,7 +352,7 @@ const TermsAndConditions = () => {
                       href="https://smartodr.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline"
+                      className="text-teal-700 hover:underline font-medium"
                     >
                       https://smartodr.in
                       <ExternalLink className="inline w-4 h-4 ml-1" />
@@ -418,7 +426,7 @@ const TermsAndConditions = () => {
                 href="https://www.arpitgoyal.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal-600 hover:underline"
+                className="text-teal-700 hover:underline font-medium"
               >
                 https://www.arpitgoyal.in
                 <ExternalLink className="inline w-4 h-4 ml-1" />
@@ -434,8 +442,7 @@ const TermsAndConditions = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Ananta Research. All rights
-          reserved.
+          © {new Date().getFullYear()} Ananta Research. All rights reserved.
         </p>
       </div>
     </div>
