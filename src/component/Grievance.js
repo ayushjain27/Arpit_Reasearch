@@ -20,6 +20,7 @@ const GrievanceRedressal = () => {
         className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
         role="region"
         aria-label="Grievance Redressal content"
+        tabIndex="0"
       >
         {/* Steps Section */}
         <div>
@@ -35,11 +36,11 @@ const GrievanceRedressal = () => {
           </ul>
         </div>
 
-        {/* Contact Table */}
+        {/* Contact Table - FIXED: unique aria-label */}
         <div
           className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           role="region"
-          aria-label="Grievance Redressal"
+          aria-label="Contact details table"
         >
           <table className="min-w-full border border-gray-200 text-sm">
             <thead className="bg-gray-50">
@@ -236,7 +237,7 @@ const GrievanceRedressal = () => {
               className="text-teal-700 hover:underline flex items-center text-sm md:text-base font-medium"
             >
               Link to SCORES Portal
-              <ExternalLink className="w-4 h-4 ml-1" />
+              <ExternalLink className="w-4 h-4 ml-1" aria-hidden="true" />
             </a>
           </div>
 
@@ -253,7 +254,7 @@ const GrievanceRedressal = () => {
               className="text-teal-700 hover:underline flex items-center text-sm md:text-base font-medium"
             >
               Link to ODR Portal
-              <ExternalLink className="w-4 h-4 ml-1" />
+              <ExternalLink className="w-4 h-4 ml-1" aria-hidden="true" />
             </a>
           </div>
         </div>

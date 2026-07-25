@@ -54,7 +54,7 @@ const InternalPolicies = () => {
                 key={tab.id}
                 id={`tab-${tab.id}`}
                 role="tab"
-                aria-selected={activeTab === tab.id}
+                aria-selected={activeTab === tab.id ? "true" : "false"}
                 aria-controls={`panel-${tab.id}`}
                 tabIndex={activeTab === tab.id ? 0 : -1}
                 onClick={() => scrollToSection(tab.ref, tab.id)}

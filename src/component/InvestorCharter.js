@@ -39,7 +39,7 @@ const InvestorCharter = () => {
       aria-label="Investor Charter"
     >
       {/* Header with title - matching reference gradient */}
-      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
+      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Investor Charter
         </h1>
@@ -55,7 +55,7 @@ const InvestorCharter = () => {
           aria-label="Investor Charter tabs"
         >
           <div className="flex space-x-1 px-4" role="tablist">
-            {tabs.map((tab, index) => (
+            {tabs.map((tab) => (
               <button
                 key={tab.id}
                 id={`tab-${tab.id}`}
@@ -78,13 +78,9 @@ const InvestorCharter = () => {
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div
-        className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto"
-        role="region"
-        aria-label="Investor Charter content"
-      >
+      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
         {/* Vision & Mission Section */}
-        <section ref={visionRef} className="scroll-mt-24">
+        <section ref={visionRef} id="panel-vision" role="tabpanel" aria-labelledby="tab-vision" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Vision & Mission
@@ -111,7 +107,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Business Details Section */}
-        <section ref={businessRef} className="scroll-mt-24">
+        <section ref={businessRef} id="panel-business" role="tabpanel" aria-labelledby="tab-business" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of business transacted by the Research Analyst with
@@ -146,7 +142,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Services Section */}
-        <section ref={servicesRef} className="scroll-mt-24">
+        <section ref={servicesRef} id="panel-services" role="tabpanel" aria-labelledby="tab-services" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of services provided to investors (No Indicative
@@ -225,7 +221,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Grievance Redressal Section */}
-        <section ref={grievanceRef} className="scroll-mt-24">
+        <section ref={grievanceRef} id="panel-grievance" role="tabpanel" aria-labelledby="tab-grievance" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of grievance redressal mechanism and how to access it
@@ -265,7 +261,7 @@ const InvestorCharter = () => {
                         href="https://scores.sebi.gov.in"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-teal-600 hover:underline ml-2"
+                        className="text-teal-700 hover:underline ml-2"
                       >
                         (https://scores.sebi.gov.in){" "}
                         <ExternalLink className="inline w-4 h-4" />
@@ -296,7 +292,7 @@ const InvestorCharter = () => {
                       href="https://smartodr.in/login"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline ml-2"
+                      className="text-teal-700 hover:underline ml-2"
                     >
                       (https://smartodr.in/login){" "}
                       <ExternalLink className="inline w-4 h-4" />
@@ -329,7 +325,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Investor Rights Section */}
-        <section ref={rightsRef} className="scroll-mt-24">
+        <section ref={rightsRef} id="panel-rights" role="tabpanel" aria-labelledby="tab-rights" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Rights of investors
@@ -346,7 +342,7 @@ const InvestorCharter = () => {
                   key={index}
                   className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4 flex items-start space-x-3"
                 >
-                  <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-teal-700 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm md:text-base">
                     {right}
                   </span>
@@ -354,7 +350,7 @@ const InvestorCharter = () => {
               ))}
               <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4">
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-teal-700 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 font-medium text-sm md:text-base">
                     Right to Initial and Continuing Disclosure
                   </span>
@@ -382,7 +378,7 @@ const InvestorCharter = () => {
                   key={index}
                   className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4 flex items-start space-x-3"
                 >
-                  <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-teal-700 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm md:text-base">
                     {right}
                   </span>
@@ -390,7 +386,7 @@ const InvestorCharter = () => {
               ))}
               <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4">
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-teal-700 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 font-medium text-sm md:text-base">
                     Additional Rights to vulnerable consumers
                   </span>
@@ -413,7 +409,7 @@ const InvestorCharter = () => {
                   key={index}
                   className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4 flex items-start space-x-3"
                 >
-                  <CheckCircle className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-teal-700 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm md:text-base">
                     {right}
                   </span>
@@ -424,7 +420,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Investor Responsibilities Section */}
-        <section ref={responsibilitiesRef} className="scroll-mt-24">
+        <section ref={responsibilitiesRef} id="panel-responsibilities" role="tabpanel" aria-labelledby="tab-responsibilities" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Expectations from the investors (Responsibilities of investors)
@@ -450,7 +446,7 @@ const InvestorCharter = () => {
                       href="https://www.sebi.gov.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-teal-600 hover:underline ml-1"
+                      className="text-teal-700 hover:underline ml-1"
                     >
                       (https://www.sebi.gov.in){" "}
                       <ExternalLink className="inline w-4 h-4" />
@@ -529,7 +525,7 @@ const InvestorCharter = () => {
         </section>
 
         {/* Complaint Data Section */}
-        <section ref={complaintsRef} className="scroll-mt-24">
+        <section ref={complaintsRef} id="panel-complaints" role="tabpanel" aria-labelledby="tab-complaints" className="scroll-mt-24">
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Complaint Data to be displayed by RAs
@@ -543,7 +539,7 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Investor charter data table"
+                aria-label="Monthly complaint data table"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -664,7 +660,7 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Investor charter data table"
+                aria-label="Monthly disposal trend table"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -804,7 +800,7 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Investor charter data table"
+                aria-label="Annual disposal trend table"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">

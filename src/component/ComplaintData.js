@@ -19,11 +19,7 @@ const ComplaintData = () => {
       </div>
 
       {/* Content Area */}
-      <div
-        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
-        role="region"
-        aria-label="Complaint Data content"
-      >
+      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
         {/* Complaint Data Section */}
         <div className="space-y-6">
           {/* Monthly Complaint Data - Changed from no heading to h2 */}
@@ -38,7 +34,7 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Complaint data table"
+              aria-label="Monthly complaint data table"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -214,7 +210,7 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Complaint data table"
+              aria-label="Monthly disposal trend table"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -314,7 +310,7 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Complaint data table"
+              aria-label="Annual disposal trend table"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
