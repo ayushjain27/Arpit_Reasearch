@@ -588,7 +588,7 @@ const AKVHomepage = () => {
                 </div>
               </div>
               <div>
-                <h4 className="text-lg font-semibold mb-4">Services</h4>
+                <h3 className="text-lg font-semibold mb-4">Services</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
                   <li>
                     <a
@@ -629,7 +629,7 @@ const AKVHomepage = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold mb-4">Legal</h4>
+                <h3 className="text-lg font-semibold mb-4">Legal</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
                   <li>
                     <a
@@ -742,7 +742,7 @@ const AKVHomepage = () => {
                 </ul>
               </div>
               <div className="space-y-4">
-                <h4 className="text-lg font-semibold">Contact Information</h4>
+                <h3 className="text-lg font-semibold">Contact Information</h3>
                 <div className="text-gray-400 space-y-2 text-sm">
                   <div>
                     <div className="font-medium">Registered Office:</div>
@@ -771,9 +771,9 @@ const AKVHomepage = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="text-gray-400 text-sm space-y-4">
                   <div>
-                    <h5 className="font-semibold text-white mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       Disclaimer:
-                    </h5>
+                    </h4>
                     <p>
                       Registration granted by SEBI and certification from NISM
                       in no way guarantee performance of the research analyst or
@@ -781,9 +781,9 @@ const AKVHomepage = () => {
                     </p>
                   </div>
                   <div>
-                    <h5 className="font-semibold text-white mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       Standard Disclaimer:
-                    </h5>
+                    </h4>
                     <p>
                       Investments in securities market are subject to market
                       risks. Read all the related documents carefully before
@@ -791,9 +791,9 @@ const AKVHomepage = () => {
                     </p>
                   </div>
                   <div>
-                    <h5 className="font-semibold text-white mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       SEBI Office Address:
-                    </h5>
+                    </h4>
                     <p>
                       SEBI Bhavan, Plot No. C4-A, 'G' Block,
                       <br />
@@ -806,9 +806,9 @@ const AKVHomepage = () => {
 
                 <div className="text-gray-400 text-sm space-y-4">
                   <div>
-                    <h5 className="font-semibold text-white mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       Registration Details:
-                    </h5>
+                    </h4>
                     <p>
                       <span className="font-medium">Registered name:</span>{" "}
                       Arpit Goyal
@@ -854,7 +854,7 @@ const AKVHomepage = () => {
           }`}
           aria-label="Scroll to top"
         >
-          <TrendingUp className="w-6 h-6" />
+          <TrendingUp className="w-6 h-6" aria-hidden="true" />
         </button>
       </div>
     </>

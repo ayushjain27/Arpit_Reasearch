@@ -52,20 +52,21 @@ const InvestorCharter = () => {
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
         <nav
           className="flex overflow-x-auto"
-          aria-label="Investor Charter navigation"
+          aria-label="Investor Charter tabs"
         >
-          <div className="flex space-x-1 px-4">
-            {tabs.map((tab) => (
+          <div className="flex space-x-1 px-4" role="tablist">
+            {tabs.map((tab, index) => (
               <button
                 key={tab.id}
-                role="tab"
-                aria-selected={activeTab === tab.id}
-                aria-controls={`panel-${tab.id}`}
                 id={`tab-${tab.id}`}
+                role="tab"
+                aria-selected={activeTab === tab.id ? "true" : "false"}
+                aria-controls={`panel-${tab.id}`}
+                tabIndex={activeTab === tab.id ? 0 : -1}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
                 className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                   activeTab === tab.id
-                    ? "border-teal-500 text-teal-600"
+                    ? "border-teal-700 text-teal-700"
                     : "border-transparent hover:border-gray-300 hover:text-gray-700"
                 }`}
               >
@@ -539,7 +540,11 @@ const InvestorCharter = () => {
                 Data for the month ending - July 2025
               </p>
 
-              <div className="overflow-x-auto">
+              <div
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor charter data table"
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -656,7 +661,11 @@ const InvestorCharter = () => {
                 Trend of monthly disposal of complaints
               </h3>
 
-              <div className="overflow-x-auto">
+              <div
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor charter data table"
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -792,7 +801,11 @@ const InvestorCharter = () => {
                 Trend of annual disposal of complaints
               </h3>
 
-              <div className="overflow-x-auto">
+              <div
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor charter data table"
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>

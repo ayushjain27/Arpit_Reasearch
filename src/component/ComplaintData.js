@@ -3,7 +3,11 @@ import React from "react";
 
 const ComplaintData = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" role="region" aria-label="Complaint Data">
+    <div
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+      role="region"
+      aria-label="Complaint Data"
+    >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
@@ -15,7 +19,11 @@ const ComplaintData = () => {
       </div>
 
       {/* Content Area */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto" role="region" aria-label="Complaint Data content">
+      <div
+        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
+        role="region"
+        aria-label="Complaint Data content"
+      >
         {/* Complaint Data Section */}
         <div className="space-y-6">
           {/* Monthly Complaint Data - Changed from no heading to h2 */}
@@ -27,7 +35,11 @@ const ComplaintData = () => {
               Data for the month ending - July 2025
             </p>
 
-            <div className="overflow-x-auto">
+            <div
+              className="overflow-x-auto"
+              role="region"
+              aria-label="Complaint data table"
+            >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>
@@ -199,7 +211,11 @@ const ComplaintData = () => {
               Trend of Monthly Disposal of Complaints
             </h2>
 
-            <div className="overflow-x-auto">
+            <div
+              className="overflow-x-auto"
+              role="region"
+              aria-label="Complaint data table"
+            >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>
@@ -295,7 +311,11 @@ const ComplaintData = () => {
               Trend of Annual Disposal of Complaints
             </h3>
 
-            <div className="overflow-x-auto">
+            <div
+              className="overflow-x-auto"
+              role="region"
+              aria-label="Complaint data table"
+            >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>
@@ -422,8 +442,7 @@ const ComplaintData = () => {
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
         </p>
         <p className="mt-1">
-          © {new Date().getFullYear()} Ananta Research. All rights
-          reserved.
+          © {new Date().getFullYear()} Ananta Research. All rights reserved.
         </p>
       </div>
     </div>

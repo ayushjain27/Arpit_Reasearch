@@ -98,8 +98,9 @@ const ResearchServices = () => {
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10 pointer-events-none"
         }`}
+        aria-label="Scroll to top"
       >
-        <TrendingUp className="w-5 h-5" />
+        <TrendingUp className="w-5 h-5" aria-hidden="true" />
       </button>
     </div>
   );

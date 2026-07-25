@@ -32,7 +32,7 @@ const InternalPolicies = () => {
     <div
       className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
       role="region"
-      aria-label="Internal Policies and Procedures"
+      aria-label="Internal Policies"
     >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
@@ -46,16 +46,17 @@ const InternalPolicies = () => {
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
         <nav
           className="flex overflow-x-auto"
-          aria-label="Internal Policies navigation"
+          aria-label="Internal Policies tabs"
         >
-          <div className="flex space-x-1 px-4">
-            {tabs.map((tab) => (
+          <div className="flex space-x-1 px-4" role="tablist">
+            {tabs.map((tab, index) => (
               <button
                 key={tab.id}
+                id={`tab-${tab.id}`}
                 role="tab"
                 aria-selected={activeTab === tab.id}
                 aria-controls={`panel-${tab.id}`}
-                id={`tab-${tab.id}`}
+                tabIndex={activeTab === tab.id ? 0 : -1}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
                 className={`px-3 py-2 text-xs md:text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
                   activeTab === tab.id
