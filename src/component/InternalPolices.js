@@ -54,7 +54,7 @@ const InternalPolicies = () => {
                 key={tab.id}
                 id={`tab-${tab.id}`}
                 role="tab"
-                aria-selected={activeTab === tab.id ? "true" : "false"}
+                aria-selected={activeTab === tab.id}
                 aria-controls={`panel-${tab.id}`}
                 tabIndex={activeTab === tab.id ? 0 : -1}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
@@ -76,6 +76,7 @@ const InternalPolicies = () => {
         className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
         role="region"
         aria-label="Internal Policies content"
+        tabIndex="0"
       >
         {/* Introduction Section */}
         <section ref={introductionRef} className="scroll-mt-24">

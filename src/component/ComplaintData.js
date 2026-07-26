@@ -7,6 +7,7 @@ const ComplaintData = () => {
       className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
       role="region"
       aria-label="Complaint Data"
+      tabIndex="0"
     >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
@@ -19,7 +20,10 @@ const ComplaintData = () => {
       </div>
 
       {/* Content Area */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
+      <div
+        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
+        tabIndex="0"
+      >
         {/* Complaint Data Section */}
         <div className="space-y-6">
           {/* Monthly Complaint Data - Changed from no heading to h2 */}
@@ -34,7 +38,8 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Monthly complaint data table"
+              aria-label="Complaint Data - Monthly complaint data table"
+              tabIndex="0"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -210,7 +215,8 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Monthly disposal trend table"
+              aria-label="Complaint Data - Monthly disposal trend table"
+              tabIndex="0"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -310,7 +316,8 @@ const ComplaintData = () => {
             <div
               className="overflow-x-auto"
               role="region"
-              aria-label="Annual disposal trend table"
+              aria-label="Complaint Data - Annual disposal trend table"
+              tabIndex="0"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">

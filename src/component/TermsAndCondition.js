@@ -20,6 +20,7 @@ const TermsAndConditions = () => {
         className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto"
         role="region"
         aria-label="Terms and Conditions content"
+        tabIndex="0"
       >
         {/* Agreement Section */}
         <section className="bg-gradient-to-r from-gray-50 to-gray-100 p-4 md:p-6 rounded-lg">

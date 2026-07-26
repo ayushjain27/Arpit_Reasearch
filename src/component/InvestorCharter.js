@@ -37,6 +37,7 @@ const InvestorCharter = () => {
       className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
       role="region"
       aria-label="Investor Charter"
+      tabIndex="0"
     >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
@@ -60,7 +61,7 @@ const InvestorCharter = () => {
                 key={tab.id}
                 id={`tab-${tab.id}`}
                 role="tab"
-                aria-selected={activeTab === tab.id ? "true" : "false"}
+                aria-selected={activeTab === tab.id}
                 aria-controls={`panel-${tab.id}`}
                 tabIndex={activeTab === tab.id ? 0 : -1}
                 onClick={() => scrollToSection(tab.ref, tab.id)}
@@ -78,9 +79,15 @@ const InvestorCharter = () => {
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto" tabIndex="0">
         {/* Vision & Mission Section */}
-        <section ref={visionRef} id="panel-vision" role="tabpanel" aria-labelledby="tab-vision" className="scroll-mt-24">
+        <section
+          ref={visionRef}
+          id="panel-vision"
+          role="tabpanel"
+          aria-labelledby="tab-vision"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Vision & Mission
@@ -107,7 +114,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Business Details Section */}
-        <section ref={businessRef} id="panel-business" role="tabpanel" aria-labelledby="tab-business" className="scroll-mt-24">
+        <section
+          ref={businessRef}
+          id="panel-business"
+          role="tabpanel"
+          aria-labelledby="tab-business"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of business transacted by the Research Analyst with
@@ -142,7 +155,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Services Section */}
-        <section ref={servicesRef} id="panel-services" role="tabpanel" aria-labelledby="tab-services" className="scroll-mt-24">
+        <section
+          ref={servicesRef}
+          id="panel-services"
+          role="tabpanel"
+          aria-labelledby="tab-services"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of services provided to investors (No Indicative
@@ -221,7 +240,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Grievance Redressal Section */}
-        <section ref={grievanceRef} id="panel-grievance" role="tabpanel" aria-labelledby="tab-grievance" className="scroll-mt-24">
+        <section
+          ref={grievanceRef}
+          id="panel-grievance"
+          role="tabpanel"
+          aria-labelledby="tab-grievance"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Details of grievance redressal mechanism and how to access it
@@ -325,7 +350,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Investor Rights Section */}
-        <section ref={rightsRef} id="panel-rights" role="tabpanel" aria-labelledby="tab-rights" className="scroll-mt-24">
+        <section
+          ref={rightsRef}
+          id="panel-rights"
+          role="tabpanel"
+          aria-labelledby="tab-rights"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Rights of investors
@@ -420,7 +451,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Investor Responsibilities Section */}
-        <section ref={responsibilitiesRef} id="panel-responsibilities" role="tabpanel" aria-labelledby="tab-responsibilities" className="scroll-mt-24">
+        <section
+          ref={responsibilitiesRef}
+          id="panel-responsibilities"
+          role="tabpanel"
+          aria-labelledby="tab-responsibilities"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Expectations from the investors (Responsibilities of investors)
@@ -525,7 +562,13 @@ const InvestorCharter = () => {
         </section>
 
         {/* Complaint Data Section */}
-        <section ref={complaintsRef} id="panel-complaints" role="tabpanel" aria-labelledby="tab-complaints" className="scroll-mt-24">
+        <section
+          ref={complaintsRef}
+          id="panel-complaints"
+          role="tabpanel"
+          aria-labelledby="tab-complaints"
+          className="scroll-mt-24"
+        >
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-gray-800 mb-2">
               Complaint Data to be displayed by RAs
@@ -539,7 +582,8 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Monthly complaint data table"
+                aria-label="Investor Charter - Monthly investor charter data table"
+                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -660,7 +704,8 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Monthly disposal trend table"
+                aria-label="Investor Charter - Monthly disposal trend table"
+                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -800,7 +845,8 @@ const InvestorCharter = () => {
               <div
                 className="overflow-x-auto"
                 role="region"
-                aria-label="Annual disposal trend table"
+                aria-label="Investor Charter - Annual disposal trend table"
+                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
