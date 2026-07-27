@@ -450,10 +450,10 @@ const InternalPoliciesContent = () => {
                 </ol>
                 <div className="mt-4 text-right">
                   <p className="font-medium">
-                    Mr. Abishek Kondagunta Venkatesh
+                    Mr. Arpit Goyal
                   </p>
-                  <p>Place: Hyderabad</p>
-                  <p>Date: July 28, 2025</p>
+                  <p>Place: Bhopal</p>
+                  <p>Date: June 28, 2025</p>
                 </div>
               </div>
             </div>
