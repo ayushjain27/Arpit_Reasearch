@@ -1,61 +1,37 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-const ComplaintData = () => {
+const ComplaintDataContent = () => {
   return (
-    <div
-      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
-      role="region"
-      aria-label="Complaint Data"
-    >
-      {/* Header */}
-      <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+      {/* Header with title */}
+      <div className="bg-gradient-to-r from-teal-600 to-blue-600 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Complaint Data
         </h1>
-        <p className="text-teal-100 mt-1 text-sm md:text-base">
+        <p className="text-teal-100 mt-1 text-sm">
           In respect of Research Analyst (RA)
         </p>
       </div>
 
       {/* Content Area */}
       <div
+        role="region"
+        aria-label="Complaint Data content"
+        tabIndex="0"
         className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
-        role="group"
-        aria-label="Complaint Data content sections"
-        tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === "ArrowDown" || e.key === "ArrowUp") {
-            e.preventDefault();
-            const container = e.currentTarget;
-            const scrollAmount = e.key === "ArrowDown" ? 100 : -100;
-            container.scrollBy({ top: scrollAmount, behavior: "smooth" });
-          }
-        }}
       >
+        {/* Complaint Data Section */}
         <div className="space-y-6">
-          {/* Monthly Complaint Data */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
-              Monthly Complaint Data
-            </h2>
             <p className="text-gray-700 mb-4 text-sm md:text-base">
-              Data for the month ending - July 2025
+              Data for the month ending - June 2026
             </p>
 
-            <div 
-              className="overflow-x-auto"
+            <div
               role="region"
-              aria-label="Complaint Data - Monthly complaint data table"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-                  e.preventDefault();
-                  const container = e.currentTarget;
-                  const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
-                  container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                }
-              }}
+              aria-label="Monthly complaint data table - scroll horizontally to view all columns"
+              tabIndex="0"
+              className="overflow-x-auto"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -88,52 +64,106 @@ const ComplaintData = () => {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">1</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      1
+                    </td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
                       Directly from Investors
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">2</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      2
+                    </td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
                       SEBI (SCORES)
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">3</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      3
+                    </td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
                       Other Sources (if any)
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2 text-gray-700">
+                      0
+                    </td>
                   </tr>
                   <tr className="font-medium bg-gray-50">
                     <td className="border border-gray-200 px-2 md:px-4 py-2"></td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
                       Grand Total
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -142,7 +172,7 @@ const ComplaintData = () => {
             <div className="mt-4 text-xs md:text-sm text-gray-600 space-y-2">
               <p className="font-medium">
                 Number of complaints received during month against the RA due to
-                impersonation by some other entity: 0
+                impersonation by some other entity:
               </p>
               <p>
                 <strong>Note:</strong> In case of any complaints received
@@ -168,25 +198,18 @@ const ComplaintData = () => {
             </div>
           </div>
 
-          {/* Trend of monthly disposal */}
+          {/* Trend of monthly disposal of complaints */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
-              Trend of Monthly Disposal of Complaints
+            <h2 className="text-base md:text-lg font-semibold text-teal-700 mb-3">
+              Trend of monthly disposal of complaints
             </h2>
 
-            <div 
-              className="overflow-x-auto"
+            {/* FIXED: Added role, aria-label, and tabIndex */}
+            <div
               role="region"
-              aria-label="Complaint Data - Monthly disposal trend table"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-                  e.preventDefault();
-                  const container = e.currentTarget;
-                  const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
-                  container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                }
-              }}
+              aria-label="Trend of monthly disposal of complaints table - scroll horizontally to view all columns"
+              tabIndex="0"
+              className="overflow-x-auto"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -213,14 +236,18 @@ const ComplaintData = () => {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {[
-                    "April, 2025",
-                    "May, 2025",
-                    "June, 2025",
                     "July, 2025",
                     "August, 2025",
                     "September, 2025",
                     "October, 2025",
                     "November, 2025",
+                    "December, 2025",
+                    "January, 2026",
+                    "February, 2026",
+                    "March, 2026",
+                    "April, 2026",
+                    "May, 2026",
+                    "June, 2026",
                   ].map((month, index) => (
                     <tr key={index}>
                       <td className="border border-gray-200 px-2 md:px-4 py-2">
@@ -229,10 +256,18 @@ const ComplaintData = () => {
                       <td className="border border-gray-200 px-2 md:px-4 py-2">
                         {month}
                       </td>
-                      <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                      <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                      <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                      <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                      <td className="border border-gray-200 px-2 md:px-4 py-2">
+                        0
+                      </td>
+                      <td className="border border-gray-200 px-2 md:px-4 py-2">
+                        0
+                      </td>
+                      <td className="border border-gray-200 px-2 md:px-4 py-2">
+                        0
+                      </td>
+                      <td className="border border-gray-200 px-2 md:px-4 py-2">
+                        0
+                      </td>
                     </tr>
                   ))}
                   <tr className="font-medium bg-gray-50">
@@ -240,10 +275,18 @@ const ComplaintData = () => {
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
                       Grand Total
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -261,25 +304,18 @@ const ComplaintData = () => {
             </div>
           </div>
 
-          {/* Trend of annual disposal */}
+          {/* Trend of annual disposal of complaints */}
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
-              Trend of Annual Disposal of Complaints
-            </h2>
+            <h3 className="text-base md:text-lg font-semibold text-teal-700 mb-3">
+              Trend of annual disposal of complaints
+            </h3>
 
-            <div 
-              className="overflow-x-auto"
+            {/* FIXED: Added role, aria-label, and tabIndex */}
+            <div
               role="region"
-              aria-label="Complaint Data - Annual disposal trend table"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-                  e.preventDefault();
-                  const container = e.currentTarget;
-                  const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
-                  container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-                }
-              }}
+              aria-label="Trend of annual disposal of complaints table - scroll horizontally to view all columns"
+              tabIndex="0"
+              className="overflow-x-auto"
             >
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
@@ -306,44 +342,62 @@ const ComplaintData = () => {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">1</td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
-                      2023-24
+                      1
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      2026-27
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">2</td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
-                      2024-25
+                      2
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">3</td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
                       2025-26
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
                   </tr>
                   <tr className="font-medium bg-gray-50">
                     <td className="border border-gray-200 px-2 md:px-4 py-2"></td>
                     <td className="border border-gray-200 px-2 md:px-4 py-2">
                       Grand Total
                     </td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
-                    <td className="border border-gray-200 px-2 md:px-4 py-2">0</td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
+                    <td className="border border-gray-200 px-2 md:px-4 py-2">
+                      0
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -363,11 +417,9 @@ const ComplaintData = () => {
         </div>
       </div>
 
-      {/* Footer */}
+      {/* Footer Note */}
       <div className="text-center text-xs md:text-sm text-gray-500 py-3 border-t">
-        <p>
-          SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
-        </p>
+        <p> SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860</p>
         <p className="mt-1">
           © {new Date().getFullYear()} Ananta Research. All rights reserved.
         </p>
@@ -376,4 +428,4 @@ const ComplaintData = () => {
   );
 };
 
-export default ComplaintData;
+export default ComplaintDataContent;

@@ -44,34 +44,29 @@ const InternalPolicies = () => {
 
       {/* Tabs - sticky with white background */}
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
-        <nav
-          className="flex overflow-x-auto"
-          aria-label="Internal Policies tabs"
+        <div
+          role="tablist"
+          aria-label="Internal Policies Sections"
+          className="flex space-x-1 px-4 overflow-x-auto"
         >
-          <div className="flex space-x-1 px-4" role="tablist">
-            {tabs.map((tab) => {
-              const isActive = activeTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  id={`tab-${tab.id}`}
-                  role="tab"
-                  aria-selected={isActive ? "true" : "false"}
-                  aria-controls={`panel-${tab.id}`}
-                  tabIndex={isActive ? 0 : -1}
-                  onClick={() => scrollToSection(tab.ref, tab.id)}
-                  className={`px-3 py-2 text-xs md:text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
-                    isActive
-                      ? "border-teal-700 text-teal-700"
-                      : "border-transparent hover:border-gray-300 hover:text-gray-700"
-                  }`}
-                >
-                  {tab.title}
-                </button>
-              );
-            })}
-          </div>
-        </nav>
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              role="tab"
+              aria-selected={activeTab === tab.id}
+              aria-controls={`panel-${tab.id}`}
+              id={`tab-${tab.id}`}
+              onClick={() => scrollToSection(tab.ref, tab.id)}
+              className={`px-3 py-2 text-xs md:text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
+                activeTab === tab.id
+                  ? "border-teal-500 text-[#222222] bg-white"
+                  : "border-transparent hover:border-gray-300 hover:text-gray-700"
+              }`}
+            >
+              {tab.title}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Content Area - Added proper ARIA attributes for scrollable container */}
