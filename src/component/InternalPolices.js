@@ -49,7 +49,7 @@ const InternalPolicies = () => {
           aria-label="Internal Policies tabs"
         >
           <div className="flex space-x-1 px-4" role="tablist">
-            {tabs.map((tab, index) => {
+            {tabs.map((tab) => {
               const isActive = activeTab === tab.id;
               return (
                 <button
@@ -75,12 +75,8 @@ const InternalPolicies = () => {
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div
-        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
-        role="region"
-        aria-label="Internal Policies content"
-        tabIndex="0"
-      >
+      {/* REMOVED: role="region", aria-label, tabindex="0" */}
+      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
         {/* Introduction Section */}
         <section ref={introductionRef} className="scroll-mt-24">
           <div className="space-y-2">

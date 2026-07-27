@@ -31,11 +31,8 @@ const ComplaintData = () => {
               Data for the month ending - July 2025
             </p>
 
-            <div
-              className="overflow-x-auto"
-              role="region"
-              aria-label="Complaint Data - Monthly complaint data table"
-            >
+            {/* REMOVED: role="region" and tabindex */}
+            <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>
@@ -207,11 +204,8 @@ const ComplaintData = () => {
               Trend of Monthly Disposal of Complaints
             </h2>
 
-            <div
-              className="overflow-x-auto"
-              role="region"
-              aria-label="Complaint Data - Monthly disposal trend table"
-            >
+            {/* REMOVED: role="region" and tabindex */}
+            <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>
@@ -307,11 +301,8 @@ const ComplaintData = () => {
               Trend of Annual Disposal of Complaints
             </h2>
 
-            <div
-              className="overflow-x-auto"
-              role="region"
-              aria-label="Complaint Data - Annual disposal trend table"
-            >
+            {/* REMOVED: role="region" and tabindex */}
+            <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-xs md:text-sm">
                 <thead className="bg-gray-50">
                   <tr>

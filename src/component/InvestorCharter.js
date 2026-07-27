@@ -80,8 +80,7 @@ const InvestorCharter = () => {
         </nav>
       </div>
 
-      {/* Content Area - All sections in one scrollable view */}
-      {/* REMOVED tabindex="0" from this div */}
+      {/* Content Area - REMOVED tabindex="0" */}
       <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
         {/* Vision & Mission Section */}
         <section
@@ -582,11 +581,8 @@ const InvestorCharter = () => {
                 Data for the month ending - July 2025
               </p>
 
-              <div
-                className="overflow-x-auto"
-                role="region"
-                aria-label="Investor Charter - Monthly investor charter data table"
-              >
+              {/* REMOVED: role="region" and tabindex */}
+              <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -703,11 +699,8 @@ const InvestorCharter = () => {
                 Trend of monthly disposal of complaints
               </h3>
 
-              <div
-                className="overflow-x-auto"
-                role="region"
-                aria-label="Investor Charter - Monthly disposal trend table"
-              >
+              {/* REMOVED: role="region" and tabindex */}
+              <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -843,11 +836,8 @@ const InvestorCharter = () => {
                 Trend of annual disposal of complaints
               </h3>
 
-              <div
-                className="overflow-x-auto"
-                role="region"
-                aria-label="Investor Charter - Annual disposal trend table"
-              >
+              {/* REMOVED: role="region" and tabindex */}
+              <div className="overflow-x-auto">
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
