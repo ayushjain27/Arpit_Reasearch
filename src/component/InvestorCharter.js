@@ -37,7 +37,6 @@ const InvestorCharter = () => {
       className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
       role="region"
       aria-label="Investor Charter"
-      tabIndex="0"
     >
       {/* Header with title - matching reference gradient */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
@@ -56,30 +55,34 @@ const InvestorCharter = () => {
           aria-label="Investor Charter tabs"
         >
           <div className="flex space-x-1 px-4" role="tablist">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                id={`tab-${tab.id}`}
-                role="tab"
-                aria-selected={activeTab === tab.id}
-                aria-controls={`panel-${tab.id}`}
-                tabIndex={activeTab === tab.id ? 0 : -1}
-                onClick={() => scrollToSection(tab.ref, tab.id)}
-                className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
-                  activeTab === tab.id
-                    ? "border-teal-700 text-teal-700"
-                    : "border-transparent hover:border-gray-300 hover:text-gray-700"
-                }`}
-              >
-                {tab.title}
-              </button>
-            ))}
+            {tabs.map((tab) => {
+              const isActive = activeTab === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  id={`tab-${tab.id}`}
+                  role="tab"
+                  aria-selected={isActive ? "true" : "false"}
+                  aria-controls={`panel-${tab.id}`}
+                  tabIndex={isActive ? 0 : -1}
+                  onClick={() => scrollToSection(tab.ref, tab.id)}
+                  className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors duration-200 ${
+                    isActive
+                      ? "border-teal-700 text-teal-700"
+                      : "border-transparent hover:border-gray-300 hover:text-gray-700"
+                  }`}
+                >
+                  {tab.title}
+                </button>
+              );
+            })}
           </div>
         </nav>
       </div>
 
       {/* Content Area - All sections in one scrollable view */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto" tabIndex="0">
+      {/* REMOVED tabindex="0" from this div */}
+      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
         {/* Vision & Mission Section */}
         <section
           ref={visionRef}
@@ -583,7 +586,6 @@ const InvestorCharter = () => {
                 className="overflow-x-auto"
                 role="region"
                 aria-label="Investor Charter - Monthly investor charter data table"
-                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -705,7 +707,6 @@ const InvestorCharter = () => {
                 className="overflow-x-auto"
                 role="region"
                 aria-label="Investor Charter - Monthly disposal trend table"
-                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
@@ -846,7 +847,6 @@ const InvestorCharter = () => {
                 className="overflow-x-auto"
                 role="region"
                 aria-label="Investor Charter - Annual disposal trend table"
-                tabIndex="0"
               >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
