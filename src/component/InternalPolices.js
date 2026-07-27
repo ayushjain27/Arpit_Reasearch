@@ -74,9 +74,22 @@ const InternalPolicies = () => {
         </nav>
       </div>
 
-      {/* Content Area - All sections in one scrollable view */}
-      {/* REMOVED: role="region", aria-label, tabindex="0" */}
-      <div className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto">
+      {/* Content Area - Added proper ARIA attributes for scrollable container */}
+      <div
+        className="p-4 md:p-6 space-y-6 max-h-[600px] overflow-y-auto"
+        role="group"
+        aria-label="Policy content sections"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          // Allow scroll with arrow keys
+          if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+            e.preventDefault();
+            const container = e.currentTarget;
+            const scrollAmount = e.key === "ArrowDown" ? 100 : -100;
+            container.scrollBy({ top: scrollAmount, behavior: "smooth" });
+          }
+        }}
+      >
         {/* Introduction Section */}
         <section ref={introductionRef} className="scroll-mt-24">
           <div className="space-y-2">

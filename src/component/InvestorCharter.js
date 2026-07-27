@@ -38,7 +38,7 @@ const InvestorCharter = () => {
       role="region"
       aria-label="Investor Charter"
     >
-      {/* Header with title - matching reference gradient */}
+      {/* Header */}
       <div className="bg-gradient-to-r from-teal-700 to-blue-700 p-6">
         <h1 className="text-xl md:text-2xl font-bold text-white">
           Investor Charter
@@ -48,7 +48,7 @@ const InvestorCharter = () => {
         </p>
       </div>
 
-      {/* Tabs - sticky with white background */}
+      {/* Tabs */}
       <div className="border-b border-gray-200 bg-white sticky top-0 z-10">
         <nav
           className="flex overflow-x-auto"
@@ -80,8 +80,21 @@ const InvestorCharter = () => {
         </nav>
       </div>
 
-      {/* Content Area - REMOVED tabindex="0" */}
-      <div className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto">
+      {/* Content Area */}
+      <div
+        className="p-4 md:p-6 space-y-4 max-h-[600px] overflow-y-auto"
+        role="group"
+        aria-label="Investor Charter content sections"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+            e.preventDefault();
+            const container = e.currentTarget;
+            const scrollAmount = e.key === "ArrowDown" ? 100 : -100;
+            container.scrollBy({ top: scrollAmount, behavior: "smooth" });
+          }
+        }}
+      >
         {/* Vision & Mission Section */}
         <section
           ref={visionRef}
@@ -581,8 +594,20 @@ const InvestorCharter = () => {
                 Data for the month ending - July 2025
               </p>
 
-              {/* REMOVED: role="region" and tabindex */}
-              <div className="overflow-x-auto">
+              <div 
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor Charter - Monthly investor charter data table"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+                    e.preventDefault();
+                    const container = e.currentTarget;
+                    const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
+                    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                  }
+                }}
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -699,8 +724,20 @@ const InvestorCharter = () => {
                 Trend of monthly disposal of complaints
               </h3>
 
-              {/* REMOVED: role="region" and tabindex */}
-              <div className="overflow-x-auto">
+              <div 
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor Charter - Monthly disposal trend table"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+                    e.preventDefault();
+                    const container = e.currentTarget;
+                    const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
+                    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                  }
+                }}
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -836,8 +873,20 @@ const InvestorCharter = () => {
                 Trend of annual disposal of complaints
               </h3>
 
-              {/* REMOVED: role="region" and tabindex */}
-              <div className="overflow-x-auto">
+              <div 
+                className="overflow-x-auto"
+                role="region"
+                aria-label="Investor Charter - Annual disposal trend table"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+                    e.preventDefault();
+                    const container = e.currentTarget;
+                    const scrollAmount = e.key === "ArrowRight" ? 200 : -200;
+                    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                  }
+                }}
+              >
                 <table className="min-w-full border border-gray-200 text-sm">
                   <thead className="bg-gray-50">
                     <tr>
@@ -921,7 +970,7 @@ const InvestorCharter = () => {
         </section>
       </div>
 
-      {/* Footer Note */}
+      {/* Footer */}
       <div className="text-center text-xs md:text-sm text-gray-500 py-3 border-t">
         <p>
           SEBI Registered Research Analyst - INH000013129 | BSE Enlistment 5860
